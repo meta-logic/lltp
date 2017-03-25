@@ -57,30 +57,6 @@ rule tptp = parse
 | "status"             { STATUS }
 | "thm"                { THM }
 | "cth"                { CTH }
-(* E-prover's inferences *)
-(*| "er"                     { ER }
-| "pm"                     { PM }
-| "spm"                    { SPM }
-| "ef"                     { EF }
-| "apply_def"              { APPLY_DEF }
-| "introduced(definition)" { INTRODUCED_DEF }
-| "rw"                     { RW }
-| "sr"                     { SR }
-| "csr"                    { CSR }
-| "ar"                     { AR }
-| "cn"                     { CN }
-| "condense"               { CONDENSE }
-| "assume_negation"        { ASSUME_NEGATION }
-| "fof_nnf"                { FOF_NNF }
-| "shift_quantors"         { SHIFT_QUANTORS }
-| "variable_rename"        { VARIABLE_RENAME }
-| "skolemize"              { SKOLEMIZE }
-| "distribute"             { DISTRIBUTE }
-| "split_conjunct"         { SPLIT_CONJUNCT }
-| "split_equiv"            { SPLIT_EQUIV }
-| "fof_simplification"     { FOF_SIMPLIFICATION }
-| "theory(equality)"       { TH_EQ }
-| "theory(equality,[symmetry])" { TH_EQ_S }*)
 | word as w             { WORD(w) }
 | quoted_word as w      { WORD(w) }
 | var as v              { VAR(v) }
