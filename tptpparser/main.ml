@@ -16,11 +16,11 @@ let _ =
     let mod_name = Sys.argv.(2) in
     let file = open_in file_name in
     let lexbuf = Lexing.from_channel file in 
-    (*let proof_dag = ref (Proof.DAG.create ()) in*)
+    let problem = ref (Problem.Sequent.create [] []) in
     try
       while true do
-        proof_dag := Tptpparser.proof Tptplexer.tptp lexbuf
-        (*print_string result; print_newline (); flush stdout*)
+        problem := Tptpparser.problem Tptplexer.tptp lexbuf;
+        print_string (Problem.Sequent.to_string !problem); print_newline (); flush stdout
       done
     with 
       | Tptplexer.EoF -> failwith "To be implemented"
