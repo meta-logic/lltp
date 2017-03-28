@@ -28,7 +28,7 @@ let rec formula_to_string f = match f with
   | AND(f1, f2) -> "(" ^ (formula_to_string f1) ^ " /\\ " ^ (formula_to_string f2) ^ ")"
   | OR(f1, f2) -> "(" ^ (formula_to_string f1) ^ " \\/ " ^ (formula_to_string f2) ^ ")"
   | IMP(f1, f2) -> "(" ^ (formula_to_string f1) ^ " -> " ^ (formula_to_string f2) ^ ")"
-  | NEG(f1) -> "~(" ^ (formula_to_string f) ^ ")"
+  | NEG(f1) -> "~(" ^ (formula_to_string f1) ^ ")"
   | FORALL(s, f1) -> "forall " ^ s ^ " (" ^ (formula_to_string f1) ^ ")"
   | EXISTS(s, f1) -> "exists " ^ s ^ " (" ^ (formula_to_string f1) ^ ")"
 
