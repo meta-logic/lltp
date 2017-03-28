@@ -3,8 +3,6 @@
 open Tptpparser
 open Lexing
 
-exception EoF
-
 let incrline lexbuf =
     lexbuf.lex_curr_p <- {
     lexbuf.lex_curr_p with
@@ -21,16 +19,16 @@ let comment_line = ['%' '#'] [^'\n']* (* comments start with % or # *)
 
 rule tptp = parse
 
-[' ' '\t' '\r']   { tptp lexbuf }
-| comment_line    { tptp lexbuf }
-| '\n'            { incrline lexbuf; tptp lexbuf }
-| "thf"           { THF }
-| "tff"           { TFF }
-| "fof"           { FOF }
-| "cnf"           { CNF }
-| "tpi"           { TPI }
-| "file"          { FILE }
-| "inference"     { INFERENCE }
+[' ' '\t' '\r']     { tptp lexbuf }
+| comment_line as c { COMMENT(c) }
+| '\n'              { incrline lexbuf; tptp lexbuf }
+| "thf"             { THF }
+| "tff"             { TFF }
+| "fof"             { FOF }
+| "cnf"             { CNF }
+| "tpi"             { TPI }
+| "file"            { FILE }
+| "inference"       { INFERENCE }
 | "axiom"              { AXIOM }
 | "hypothesis"         { HYPOTHESIS }
 | "conjecture"         { CONJECTURE }
@@ -62,5 +60,5 @@ rule tptp = parse
 | var as v              { VAR(v) }
 | integer as i          { INTEGER(int_of_string i) }
 | filepath              { FILEPATH }
-| eof                   { raise EoF }
+| eof                   { EoF }
 | _ as c    { Printf.printf "Unrecognized character: %c\n" c; raise (Failure "")}

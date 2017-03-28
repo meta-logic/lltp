@@ -33,15 +33,16 @@ let theoryToString thr = match thr with
   | TPI -> "tpi"
 
 let problem = Sequent.create [] [] ;;
+let info = [] ;;
 
 let quantified_vars = ref [] ;;
 let used_vars = ref [] ;;
 
 %}
 
-%token THF TFF FOF CNF TPI
+%token THF TFF FOF CNF TPI EoF
 %token AXIOM HYPOTHESIS CONJECTURE NEG_CONJECTURE PLAIN
-%token <string> ATOM
+%token <string> ATOM COMMENT
 %token FILE INFERENCE STATUS
        OR NOT AND IMP BIMP FORALL EXISTS EQ NEQ FALSE TRUE
        LPAREN RPAREN COMMA DOT COLON LBRACKET RBRACKET
@@ -50,21 +51,25 @@ let used_vars = ref [] ;;
 %token <string> WORD VAR
 %token <int> INTEGER
 
-%start problem /* the entry point */
-%type <Problem.Sequent.t> problem
+%start file /* the entry point */
+%type <Problem.Sequent.t * (string list) > file
 
 %%
+
+file:
+| COMMENT file { let (p, i) = $2 in (p, $1 :: i) } 
+| problem file { let (p, i) = $2 in 
+                 let (role, form) = $1 in 
+                 match role with
+                   | HYP -> (Sequent.add_hypothesis p form, i)
+                   | GOAL -> (Sequent.add_goal p form, i)
+               }
+| EoF          { (problem, info) }
 
 problem:
 | theory LPAREN name COMMA role COMMA formula RPAREN DOT {
   match $1 with
-    | FOF | CNF -> begin
-      let name = $3 in
-      let formula = $7 in 
-      match $5 with
-        | HYP -> Sequent.add_hypothesis problem formula
-        | GOAL -> Sequent.add_goal problem formula
-      end
+    | FOF | CNF -> ($5, $7)
       (*let free_vars = List.filter (fun used -> not (List.mem used !quantified_vars) ) !used_vars in
       let closed_formula = List.fold_left (fun acc fv -> "(all (" ^ fv ^ "\\ " ^ acc ^ "))") formula free_vars in
       used_vars := [];
