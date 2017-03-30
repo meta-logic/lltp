@@ -17,8 +17,9 @@ let _ =
     let lexbuf = Lexing.from_channel file in 
     try
       let (problem, info) = Tptpparser.file Tptplexer.tptp lexbuf in
-      List.iter (fun l -> print_endline l) info;
-      print_string (Problem.Sequent.to_string problem); print_newline (); flush stdout
+      print_string "Success!\n"
+      (*List.iter (fun l -> print_endline l) info;
+      print_string (Problem.Sequent.to_string problem); print_newline (); flush stdout*)
     with 
       | Parsing.Parse_error ->  
         Format.printf "Syntax error while parsing file %s at %s.\n%!" file_name (position lexbuf); 
