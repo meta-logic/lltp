@@ -17,15 +17,23 @@ type llformula =
   | LLFORALL of string * llformula
   | LLEXISTS of string * llformula
 
-(* TODO: this is *not* kleene's translation!!! *)
-(* or any translation for that matter *)
-let rec kleene f = match f with
+(* Girard's translation: IL to LL
+ * from Linear Logic (1987)
+ *
+ * A /\ B = A & B
+ * A -> B = !A -o B
+ * A \/ B = !A + !B
+ * false = 0
+ * true = top
+ *)
+let rec girard f = match f with
   | ATOM(s, tl) -> LLATOM(s, tl)
   | TRUE -> TOP
-  | FALSE -> BOT
-  | AND(f1, f2) -> WITH(kleene f1, kleene f2)
-  | OR(f1, f2) -> PAR(kleene f1, kleene f2)
-  | IMP(f1, f2) -> LOLLI(kleene f1, kleene f2)
-  | NEG(f1) -> PERP(kleene f1)
-  | FORALL(s, f1) -> LLFORALL(s, kleene f1)
-  | EXISTS(s, f1) -> LLEXISTS(s, kleene f1)
+  | FALSE -> ZERO
+  | AND(f1, f2) -> WITH(girard f1, girard f2)
+  | OR(f1, f2) -> PLUS(girard f1, girard f2)
+  | IMP(f1, f2) -> LOLLI(BANG(girard f1), girard f2)
+  | NEG(f1) -> LOLLI(BANG(girard f1), ZERO)
+  (* Propositional, for now
+  | FORALL(s, f1) -> LLFORALL(s, girard f1)
+  | EXISTS(s, f1) -> LLEXISTS(s, girard f1) *)
