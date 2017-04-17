@@ -1,4 +1,5 @@
 open Problem
+open Problem.Sequent
 
 type llformula = 
   | LLATOM of string * (term list)
@@ -16,6 +17,23 @@ type llformula =
   | PERP of llformula (* Is this right? *)
   | LLFORALL of string * llformula
   | LLEXISTS of string * llformula
+
+module LLSequent = struct
+  
+  type t = {
+    hypotheses : llformula list;
+    goals : llformula list
+  }
+
+  let create hyp g = {
+    hypotheses = hyp;
+    goals = g
+  }
+
+end;;
+
+(* Translated sequent seq using translation function trans *)
+let translate seq trans = LLSequent.create (List.map trans seq.hypotheses) (List.map trans seq.goals)
 
 (* Girard's translation: IL to LL
  * from Linear Logic (1987)
@@ -37,3 +55,4 @@ let rec girard f = match f with
   (* Propositional, for now
   | FORALL(s, f1) -> LLFORALL(s, girard f1)
   | EXISTS(s, f1) -> LLEXISTS(s, girard f1) *)
+
