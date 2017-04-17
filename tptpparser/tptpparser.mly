@@ -70,12 +70,6 @@ problem:
 | theory LPAREN name COMMA role COMMA formula RPAREN DOT {
   match $1 with
     | FOF | CNF -> ($5, $7)
-      (*let free_vars = List.filter (fun used -> not (List.mem used !quantified_vars) ) !used_vars in
-      let closed_formula = List.fold_left (fun acc fv -> "(all (" ^ fv ^ "\\ " ^ acc ^ "))") formula free_vars in
-      used_vars := [];
-      quantified_vars := [];
-      DAG.insert proof_dag name closed_formula inference parents;
-      proof_dag*)
     | _ -> print_endline ("Unsupported theory: " ^ (theoryToString $1)); exit 4
 }
 | theory LPAREN name COMMA role COMMA formula COMMA WORD RPAREN DOT {

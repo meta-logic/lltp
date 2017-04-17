@@ -14,7 +14,7 @@ type llformula =
   | LOLLI of llformula * llformula
   | BANG of llformula
   | QMARK of llformula
-  | PERP of llformula (* Is this right? *)
+  | PERP of llformula
   | LLFORALL of string * llformula
   | LLEXISTS of string * llformula
 
