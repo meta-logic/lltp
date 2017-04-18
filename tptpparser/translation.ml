@@ -14,9 +14,33 @@ type llformula =
   | LOLLI of llformula * llformula
   | BANG of llformula
   | QMARK of llformula
-  | PERP of llformula
+  (* Only propositional problems so far 
   | LLFORALL of string * llformula
-  | LLEXISTS of string * llformula
+  | LLEXISTS of string * llformula *)
+
+let rec llformula_to_string f = match f with
+  | LLATOM(s, args) -> begin try
+    let head = term_to_string (List.hd args) in
+    let tail = List.tl args in
+    s ^ "(" ^ (List.fold_left (fun acc t -> acc ^ "," ^ (term_to_string t)) head tail) ^ ")"
+    with
+      Failure "hd" -> s
+    end
+  | TOP -> "T"
+  | ONE -> "1"
+  | BOT -> "B"
+  | ZERO -> "0"
+  | TENSOR(f1, f2) -> "(" ^ (llformula_to_string f1) ^ " * " ^ (llformula_to_string f2) ^ ")"
+  | WITH(f1, f2) -> "(" ^ (llformula_to_string f1) ^ " & " ^ (llformula_to_string f2) ^ ")"
+  | PLUS(f1, f2) -> "(" ^ (llformula_to_string f1) ^ " + " ^ (llformula_to_string f2) ^ ")"
+  | PAR(f1, f2) -> "(" ^ (llformula_to_string f1) ^ " | " ^ (llformula_to_string f2) ^ ")"
+  | LOLLI(f1, f2) -> "(" ^ (llformula_to_string f1) ^ " -o " ^ (llformula_to_string f2) ^ ")"
+  | BANG(f1) -> "!(" ^ (llformula_to_string f1) ^ ")"
+  | QMARK(f1) -> "?(" ^ (llformula_to_string f1) ^ ")"
+  (* Only propositional problems so far 
+  | LLFORALL(s, f1) -> " " ^ s ^ " (" ^ (formula_to_string f1) ^ ")"
+  | LLEXISTS(s, f1) -> "exists " ^ s ^ " (" ^ (formula_to_string f1) ^ ")" *)
+
 
 module LLSequent = struct
   

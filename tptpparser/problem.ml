@@ -10,8 +10,9 @@ type formula =
   | OR of formula * formula
   | IMP of formula * formula
   | NEG of formula
+  (* Only propositional problems so far 
   | FORALL of string * formula
-  | EXISTS of string * formula
+  | EXISTS of string * formula *)
 
 type place = 
   | HYP
@@ -19,18 +20,30 @@ type place =
 
 let rec term_to_string t = match t with
   | VAR(s) -> s
-  | FUN(s, tl) -> s ^ "(" ^ (List.fold_right (fun t acc -> (term_to_string t) ^ ", " ^ acc) tl "") ^ ")"
+  | FUN(s, args) -> try 
+    let head = term_to_string (List.hd args) in
+    let tail = List.tl args in
+    s ^ "(" ^ (List.fold_left (fun acc t -> acc ^ "," ^ (term_to_string t)) head tail) ^ ")"
+    with 
+      Failure "hd" -> s
 
 let rec formula_to_string f = match f with
-  | ATOM(s, tl) -> s ^ "(" ^ (List.fold_right (fun t acc -> (term_to_string t) ^ ", " ^ acc) tl "") ^ ")"
+  | ATOM(s, args) -> begin try 
+    let head = term_to_string (List.hd args) in
+    let tail = List.tl args in
+    s ^ "(" ^ (List.fold_left (fun acc t -> acc ^ "," ^ (term_to_string t)) head tail) ^ ")"
+    with 
+      Failure "hd" -> s
+    end
   | TRUE -> "true"
   | FALSE -> "false"
   | AND(f1, f2) -> "(" ^ (formula_to_string f1) ^ " /\\ " ^ (formula_to_string f2) ^ ")"
   | OR(f1, f2) -> "(" ^ (formula_to_string f1) ^ " \\/ " ^ (formula_to_string f2) ^ ")"
   | IMP(f1, f2) -> "(" ^ (formula_to_string f1) ^ " -> " ^ (formula_to_string f2) ^ ")"
   | NEG(f1) -> "~(" ^ (formula_to_string f1) ^ ")"
+  (* Only propositional problems so far 
   | FORALL(s, f1) -> "forall " ^ s ^ " (" ^ (formula_to_string f1) ^ ")"
-  | EXISTS(s, f1) -> "exists " ^ s ^ " (" ^ (formula_to_string f1) ^ ")"
+  | EXISTS(s, f1) -> "exists " ^ s ^ " (" ^ (formula_to_string f1) ^ ")" *)
 
 (* 
  * Let's start with the simplest possible representation: a problem is a list of

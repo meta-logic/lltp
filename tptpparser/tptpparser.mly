@@ -31,6 +31,7 @@ let theoryToString thr = match thr with
   | THF -> "thf"
   | TFF -> "tff"
   | TPI -> "tpi"
+  | _ -> failwith "Unknown theory."
 
 let problem = Sequent.create [] [] ;;
 let info = [] ;;
@@ -102,8 +103,9 @@ formula:
 | formula IMP formula   { IMP( $1, $3 ) }
 | formula BIMP formula  { AND( IMP( $1, $3 ), IMP( $3, $1 ) ) }
 | NOT formula           { NEG( $2 ) }
+/* Propositional only
 | FORALL LBRACKET qvar RBRACKET COLON formula   { FORALL( $3, $6 ) }
-| EXISTS LBRACKET qvar RBRACKET COLON formula   { EXISTS( $3, $6 ) }
+| EXISTS LBRACKET qvar RBRACKET COLON formula   { EXISTS( $3, $6 ) } */
 | FALSE                 { FALSE }
 | TRUE                  { TRUE }
 
