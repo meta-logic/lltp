@@ -21,8 +21,8 @@ let _ =
       (* Translating *)
       let llseq = translate problem girard in
       (* Printing LL problem to stdout *)
-      List.iter (fun l -> print_endline l) info;
-      print_endline (LLSequent.to_lltp llseq)
+      (*List.iter (fun l -> print_endline l) info;*)
+      print_endline (LLSequent.to_sellf llseq)
     with 
       | Parsing.Parse_error ->  
         Format.printf "Syntax error while parsing file %s at %s.\n%!" file_name (position lexbuf); 
