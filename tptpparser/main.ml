@@ -1,4 +1,5 @@
 open Printf
+open Translation
 
 let position lexbuf =
   let curr = lexbuf.Lexing.lex_curr_p in
@@ -17,9 +18,11 @@ let _ =
     let lexbuf = Lexing.from_channel file in 
     try
       let (problem, info) = Tptpparser.file Tptplexer.tptp lexbuf in
-      print_string "Success!\n"
-      (*List.iter (fun l -> print_endline l) info;
-      print_string (Problem.Sequent.to_string problem); print_newline (); flush stdout*)
+      (* Translating *)
+      let llseq = translate problem girard in
+      (* Printing LL problem to stdout *)
+      List.iter (fun l -> print_endline l) info;
+      print_endline (LLSequent.to_lltp llseq)
     with 
       | Parsing.Parse_error ->  
         Format.printf "Syntax error while parsing file %s at %s.\n%!" file_name (position lexbuf); 

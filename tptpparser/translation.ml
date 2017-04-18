@@ -41,6 +41,14 @@ let rec llformula_to_string f = match f with
   | LLFORALL(s, f1) -> " " ^ s ^ " (" ^ (formula_to_string f1) ^ ")"
   | LLEXISTS(s, f1) -> "exists " ^ s ^ " (" ^ (formula_to_string f1) ^ ")" *)
 
+(* Fresh number generator *)
+let fresh =
+  let count = ref 0 in
+    fun () -> incr count; !count
+
+let to_axiom f = "fof(ax" ^ (string_of_int (fresh())) ^ ", axiom, " ^ (llformula_to_string f) ^ ")." 
+
+let to_conjecture f = "fof(con" ^ (string_of_int (fresh())) ^ ", conjecture, " ^ (llformula_to_string f) ^ ")."
 
 module LLSequent = struct
   
@@ -53,6 +61,11 @@ module LLSequent = struct
     hypotheses = hyp;
     goals = g
   }
+
+  let to_lltp seq = 
+    let axioms = List.fold_right (fun f acc -> (to_axiom f) ^ "\n") seq.hypotheses "" in
+    let conjectures = List.fold_right (fun f acc -> (to_conjecture f) ^ "\n") seq.goals "" in
+    axioms ^ conjectures
 
 end;;
 
