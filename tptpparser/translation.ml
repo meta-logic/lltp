@@ -47,8 +47,38 @@ let fresh =
     fun () -> incr count; !count
 
 let to_axiom f = "fof(ax" ^ (string_of_int (fresh())) ^ ", axiom, " ^ (llformula_to_string f) ^ ")." 
-
 let to_conjecture f = "fof(con" ^ (string_of_int (fresh())) ^ ", conjecture, " ^ (llformula_to_string f) ^ ")."
+
+let rec term_to_sellf_string t = match t with
+  | VAR(s) -> s
+  | FUN(s, args) -> try 
+    let head = term_to_sellf_string (List.hd args) in
+    let tail = List.tl args in
+    "(" ^ s ^ (List.fold_left (fun acc t -> acc ^ " " ^ (term_to_sellf_string t)) head tail) ^ ")"
+    with 
+      Failure "hd" -> s
+
+
+let rec llformula_to_sellf_string f = match f with
+  | LLATOM(s, args) -> begin try
+    let head = term_to_string (List.hd args) in
+    let tail = List.tl args in
+    "(" ^ s ^ (List.fold_left (fun acc t -> acc ^ " " ^ (term_to_string t)) head tail) ^ ")"
+    with
+      Failure "hd" -> s
+    end
+  | TOP -> "ltop"
+  | ONE -> "lone"
+  | ZERO -> "lzero"
+  | TENSOR(f1, f2) -> "(tensor " ^ (llformula_to_sellf_string f1) ^ " " ^ (llformula_to_sellf_string f2) ^ ")"
+  | WITH(f1, f2) -> "(with " ^ (llformula_to_sellf_string f1) ^ " " ^ (llformula_to_sellf_string f2) ^ ")"
+  | PLUS(f1, f2) -> "(oplus " ^ (llformula_to_sellf_string f1) ^ " " ^ (llformula_to_sellf_string f2) ^ ")"
+  | LOLLI(f1, f2) -> "(lolli " ^ (llformula_to_sellf_string f1) ^ " " ^ (llformula_to_sellf_string f2) ^ ")"
+  | BANG(f1) -> "(lbang " ^ (llformula_to_sellf_string f1) ^ ")"
+  | _ -> failwith ("Unsupported connective in ILL " ^ (llformula_to_sellf_string f))
+
+let to_lft f = "(lft " ^ (llformula_to_sellf_string f) ^ ") " 
+let to_rght f = "(rght " ^ (llformula_to_sellf_string f) ^ ") " 
 
 module LLSequent = struct
   
@@ -66,6 +96,26 @@ module LLSequent = struct
     let axioms = List.fold_right (fun f acc -> (to_axiom f) ^ "\n") seq.hypotheses "" in
     let conjectures = List.fold_right (fun f acc -> (to_conjecture f) ^ "\n") seq.goals "" in
     axioms ^ conjectures
+  
+  let to_sellf seq = 
+    let lefts = try
+    let head_hyp = List.hd seq.hypotheses in
+    let tl_hyp = List.tl seq.hypotheses in
+      List.fold_left (fun acc f -> " | " ^ (to_lft f)) (to_lft head_hyp) tl_hyp
+    with 
+      Failure "hd" -> "" 
+    in
+    let rights = try
+    let head_gl = List.hd seq.goals in
+    let tl_gl = List.tl seq.goals in
+      List.fold_left (fun acc f -> " | " ^ (to_conjecture f)) (to_rght head_gl) tl_gl
+    with
+      Failure "hd" -> ""
+    in match (lefts, rights) with
+      | ("", "") -> "ltop"
+      | ("", r) -> r
+      | (l, "") -> l
+      | _ -> lefts ^ " | "  ^ rights
 
 end;;
 
