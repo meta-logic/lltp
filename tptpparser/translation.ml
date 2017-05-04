@@ -54,7 +54,7 @@ let rec term_to_sellf_string t = match t with
   | FUN(s, args) -> try 
     let head = term_to_sellf_string (List.hd args) in
     let tail = List.tl args in
-    "(" ^ s ^ (List.fold_left (fun acc t -> acc ^ " " ^ (term_to_sellf_string t)) head tail) ^ ")"
+    "(" ^ s ^ " " ^ (List.fold_left (fun acc t -> acc ^ " " ^ (term_to_sellf_string t)) head tail) ^ ")"
     with 
       Failure "hd" -> s
 
@@ -63,7 +63,7 @@ let rec llformula_to_sellf_string f = match f with
   | LLATOM(s, args) -> begin try
     let head = term_to_string (List.hd args) in
     let tail = List.tl args in
-    "(" ^ s ^ (List.fold_left (fun acc t -> acc ^ " " ^ (term_to_string t)) head tail) ^ ")"
+    "(" ^ s ^ " " ^ (List.fold_left (fun acc t -> acc ^ " " ^ (term_to_string t)) head tail) ^ ")"
     with
       Failure "hd" -> s
     end
