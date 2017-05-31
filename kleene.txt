@@ -1,0 +1,88 @@
+fof(con, conjecture,  $\vdash A\to A$ ).
+fof(con, conjecture,  $A\to B, B\to C\vdash A\to C$ ).
+fof(con, conjecture,  $A\to (B\to C)\vdash B\to (A\to C)$ ).
+fof(con, conjecture,  $A\to (B\to C) \vdash A\land B\to C$ ).
+fof(con, conjecture,  $A\land B\to C\vdash A\to (B\to C)$ ).
+fof(con, conjecture,  $A\to B\vdash (B\to C) \to (A\to C)$ ).
+fof(con, conjecture,  $A\to B\vdash (C\to A) \to (C\to B)$ ).
+fof(con, conjecture,  $A\to B\vdash A\land C\to B\land C$ ).
+fof(con, conjecture,  $A\to B\vdash C\land  A \to C\land B$ ).
+fof(con, conjecture,  $A\to B\vdash (A\lor C) \to (B\lor C)$ ).
+fof(con, conjecture,  $A\to B\vdash (C\lor A) \to (C\lor B)$ ).
+fof(con, conjecture,  $\neg A\vdash A\to B$ ).
+fof(con, conjecture,  $A\vdash \neg A\to B$ ).
+fof(con, conjecture,  $B \vdash A\to B$ ).
+fof(con, conjecture,  $A\to B\vdash \neg B\to \neg A$ ).
+fof(con, conjecture,  $A\to \neg B\vdash B\to \neg A$ ).
+fof(con, conjecture,  $\neg A\to B\vdash \neg B\to A$ ).
+fof(con, conjecture,  $\neg A\to \neg B\vdash  B\to  A$ ).
+fof(con, conjecture,  $A\to B, B\to A\vdash A\sim B$ ).
+fof(con, conjecture,  $A\sim B\vdash A\to B$ ).
+fof(con, conjecture,  $A\sim B\vdash B\to A$ ).
+fof(con, conjecture,  $A\sim B, A\vdash  B$ ).
+fof(con, conjecture,  $A\sim B, B\vdash  A$ ).
+fof(con, conjecture,  $\vdash A\sim A$  ).
+fof(con, conjecture,  $A\sim B\vdash B\sim A$ ).
+fof(con, conjecture,  $A\sim B, B\sim C\vdash A\sim C$ ).
+fof(con, conjecture,  $A\to (B\to C), \neg\neg A, \neg\neg B \vdash \neg\neg C$ ).
+fof(con, conjecture,  $\neg \neg (A\to B)\vdash \neg \neg A\to \neg\neg B $ ).
+fof(con, conjecture,  $\neg \neg (A\to B), \neg \neg (B\to C)\vdash \neg \neg (A\to C)$ ).
+fof(con, conjecture,  $\vdash \neg \neg (A\land B) \sim \neg\neg A\land \neg\neg B$, in particular ).
+fof(con, conjecture,  $\vdash \neg \neg (A\sim B) \sim \neg\neg (A\to B) \land \neg\neg (B\to A)$ ).
+fof(con, conjecture,  $A \sim B \vdash A \to C \sim B \to C$ ).
+fof(con, conjecture,  $A \sim B \vdash C \to A \sim C \to B$ ).
+fof(con, conjecture,  $A \sim B \vdash A \land C \sim B \land C$ ).
+fof(con, conjecture,  $A \sim B \vdash C \land A \sim C \land B$ ).
+fof(con, conjecture,  $A \sim B \vdash A \lor C \sim B \lor C$ ).
+fof(con, conjecture,  $A \sim B \vdash C \lor A \sim C \lor B$ ).
+fof(con, conjecture,  $A \sim B \vdash \neg A \sim \neg B$ ).
+fof(con, conjecture,  $\vdash (A \land B) \land C \sim A \land (B \land C)$ ).
+fof(con, conjecture,  $\vdash (A \lor B) \lor C \sim A \lor (B \lor C)$ ).
+fof(con, conjecture,  $\vdash A \land B \sim B \land A$ ).
+fof(con, conjecture,  $\vdash A \lor B \sim B \lor A$ ).
+fof(con, conjecture,  $\vdash A \land (B \lor C) \sim (A \land B) \lor (A \land C)$ ).
+fof(con, conjecture,  $\vdash A \lor (B \land C) \sim (A \lor B) \land (A \lor C)$ ).
+fof(con, conjecture,  $\vdash A \land A \sim A$ ).
+fof(con, conjecture,  $\vdash A \lor A \sim A$ ).
+fof(con, conjecture,  $\vdash A \land (A \lor B) \sim A$ ).
+fof(con, conjecture,  $\vdash A \lor (A \land B) \sim A$ ).
+fof(con, conjecture,  $A \vdash A \to B \sim B$ ).
+fof(con, conjecture,  $B \vdash A \to B \sim B$ ).
+fof(con, conjecture,  $\neg A \vdash A \to B \sim \neg A$ ).
+fof(con, conjecture,  $\neg B \vdash A \to B \sim \neg A$ ).
+fof(con, conjecture,  $B \vdash A \land B \sim A$ ).
+fof(con, conjecture,  $B \vdash A \lor B \sim B$ ).
+fof(con, conjecture,  $\neg B \vdash A \land B \sim B$ ).
+fof(con, conjecture,  $\neg B \vdash A \lor B \sim A$ ).
+fof(con, conjecture,  $\vdash A \to \neg \neg A$ ).
+fof(con, conjecture,  $\vdash \neg \neg \neg A \sim \neg A$ ).
+fof(con, conjecture,  $A \lor \neg A \to (\neg \neg A \to A)$ ).
+fof(con, conjecture,  $\vdash A \lor \neg A \to (\neg \neg A \sim A)$ ).
+fof(con, conjecture,  $\vdash \neg (A \land \neg A)$ ).
+fof(con, conjecture,  $\vdash \neg (A \sim \neg A)$ ).
+fof(con, conjecture,  $\vdash \neg \neg (A \lor \neg A)$ ).
+fof(con, conjecture,  $\vdash \neg \neg (\neg \neg A \to A)$ ).
+fof(con, conjecture,  $\vdash A \land (B \lor \neg B) \sim A$ ).
+fof(con, conjecture,  $\vdash A \lor (B \land \neg B) \sim A$ ).
+fof(con, conjecture,  $\vdash A \land B \land \neg B \sim B \land \neg B$ ).
+fof(con, conjecture,  $\vdash A \lor B \lor \neg B \sim B \lor \neg B$ ).
+fof(con, conjecture,  $\vdash A \lor B \to \neg (\neg A \land \neg B)$ ).
+fof(con, conjecture,  $\vdash \neg A \lor B \to \neg (A \land \neg B)$ ).
+fof(con, conjecture,  $\vdash A \land B \to \neg (\neg A \lor \neg B)$ ).
+fof(con, conjecture,  $\vdash A \land \neg B \to \neg (\neg A \lor B)$ ).
+fof(con, conjecture,  $\vdash (A \to B) \to \neg (A \land \neg B)$ ).
+fof(con, conjecture,  $\vdash A \to \neg B \sim \neg (A \land B) \sim \neg \neg A \to \neg B \sim \neg \neg (\neg A \lor \neg B)$ ).
+fof(con, conjecture,  $\neg \neg B \to B \vdash \neg \neg A \to B \sim A \to B \sim \neg (A \land \neg B)$ ).
+fof(con, conjecture,  $\vdash (\neg \neg A \to B) \to \neg (A \land \neg B)$ ).
+fof(con, conjecture,  $\vdash \neg A \lor B \to (A \to B)$ ).
+fof(con, conjecture,  $\vdash (A \to B) \to \neg \neg (\neg A \lor B)$ ).
+fof(con, conjecture,  $\vdash (\neg A \to B) \to \neg \neg (A \lor B)$ ).
+fof(con, conjecture,  $\vdash A \land B \to \neg (A \to \neg B)$ ).
+fof(con, conjecture,  $\vdash A \land \neg B \to \neg (A \to B)$ ).
+fof(con, conjecture,  $\vdash \neg \neg A \land B \to \neg (A \to \neg B)$ ).
+fof(con, conjecture,  $\vdash \neg \neg A \land \neg B \sim \neg (A \to B) \sim \neg (\neg A \lor B) \sim \neg \neg (A \land \neg B)$ ).
+fof(con, conjecture,  $\vdash \neg \neg (A \to B) \sim \neg (A \land \neg B) \sim A \to \neg \neg B \sim \neg \neg A \to \neg \neg B$ ).
+fof(con, conjecture,  $\vdash A \lor B \sim \neg A \to B$ ).
+fof(con, conjecture,  $\vdash \neg (A \lor B) \sim \neg (\neg A \to B)$ ).
+fof(con, conjecture,  $\vdash \neg A \lor \neg B \to \neg (A \land B)$ ).
+fof(con, conjecture,  $\vdash \neg (A \lor B) \sim \neg A \land \neg B$ ).
