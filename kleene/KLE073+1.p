@@ -1,6 +1,6 @@
 
 %--------------------------------------------------------------------------
-% File     : SYJ073+1 : ILTP v1.1.2
+% File     : KLE073+1 : 
 % Domain   : Intuitionistic Syntactic
 % Problem  : Kleene
 % Version  : Especial.

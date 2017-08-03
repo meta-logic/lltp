@@ -13,11 +13,11 @@ mkdir $problemdir
 while read fof 
 do
   printf -v threedigits "%03d" $counter
-  problemname=SYJ${threedigits}+1
+  problemname=KLE${threedigits}+1
 
   echo """
 %--------------------------------------------------------------------------
-% File     : $problemname : ILTP v1.1.2
+% File     : $problemname : TPTP 
 % Domain   : Intuitionistic Syntactic
 % Problem  : Kleene
 % Version  : Especial.
