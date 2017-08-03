@@ -13,7 +13,7 @@
 % Rating (intuit.) : 0.00 v1.0.0
 %--------------------------------------------------------------------------
 
-fof(axiom1, axiom, a & b => c ).
+fof(axiom1, axiom, (a & b) => c ).
 
 fof(con, conjecture, a => (b => c) ).
 

@@ -15,7 +15,7 @@
 
 fof(axiom1, axiom, a => (b => c) ).
 
-fof(con, conjecture, a & b => c ).
+fof(con, conjecture, (a & b) => c ).
 
 %--------------------------------------------------------------------------
   

@@ -15,7 +15,7 @@
 
 fof(axiom1, axiom, ~b ).
 
-fof(con, conjecture, a | b <=> a ).
+fof(con, conjecture, (a | b) <=> a ).
 
 %--------------------------------------------------------------------------
   
