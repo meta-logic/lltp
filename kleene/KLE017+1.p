@@ -9,7 +9,7 @@
 
 % Source   : [Kle52]
 %
-% Status (intuit.) : Theorem
+% Status (intuit.) : Non-Theorem
 % Rating (intuit.) : 0.00 v1.0.0
 %--------------------------------------------------------------------------
   
