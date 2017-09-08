@@ -9,13 +9,13 @@
 
 % Source   : [Kle52]
 %
-% Status (intuit.) : Non-Theorem
+% Status (intuit.) : Theorem
 % Rating (intuit.) : 0.00 v1.0.0
 %--------------------------------------------------------------------------
   
 fof(axiom1, axiom, ~a => ~b ).
 
-fof(con, conjecture, b => a ).
+fof(con, conjecture, ~~b => ~~a ).
 
 %--------------------------------------------------------------------------
   
