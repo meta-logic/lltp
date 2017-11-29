@@ -93,22 +93,22 @@ module LLSequent = struct
   }
 
   let to_lltp seq = 
-    let axioms = List.fold_right (fun f acc -> (to_axiom f) ^ "\n") seq.hypotheses "" in
-    let conjectures = List.fold_right (fun f acc -> (to_conjecture f) ^ "\n") seq.goals "" in
+    let axioms = List.fold_right (fun f acc -> (to_axiom f) ^ "\n" ^ acc) seq.hypotheses "" in
+    let conjectures = List.fold_right (fun f acc -> (to_conjecture f) ^ "\n" ^ acc) seq.goals "" in
     axioms ^ conjectures
   
   let to_sellf seq = 
     let lefts = try
     let head_hyp = List.hd seq.hypotheses in
     let tl_hyp = List.tl seq.hypotheses in
-      List.fold_left (fun acc f -> " | " ^ (to_lft f)) (to_lft head_hyp) tl_hyp
+      List.fold_left (fun acc f -> acc ^ " | " ^ (to_lft f)) (to_lft head_hyp) tl_hyp
     with 
       Failure "hd" -> "" 
     in
     let rights = try
     let head_gl = List.hd seq.goals in
     let tl_gl = List.tl seq.goals in
-      List.fold_left (fun acc f -> " | " ^ (to_conjecture f)) (to_rght head_gl) tl_gl
+      List.fold_left (fun acc f -> acc ^ " | " ^ (to_conjecture f)) (to_rght head_gl) tl_gl
     with
       Failure "hd" -> ""
     in match (lefts, rights) with
