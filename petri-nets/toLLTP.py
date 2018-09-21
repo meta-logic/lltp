@@ -205,11 +205,12 @@ lltp_dir = 'mcc-lltp'
 if not os.path.isdir(lltp_dir):
     os.mkdir(lltp_dir)
 
-
+i = 0
 for root, dirs, files in os.walk(dir):
     if root.endswith('/PT'):
+        i += 1
         model_name = re.findall(r'/(.*?)/', root)[0]
-        print ("Model name: " + model_name)
+        print ("Model " + str(i) + ": " + model_name)
 
         for f in files:
             (initMark, rules) = pnmlToRules (os.path.join (root, f))
