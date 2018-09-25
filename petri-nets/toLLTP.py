@@ -15,6 +15,10 @@ def pnmlToRules (fileName):
         mark = p.find(ns + 'initialMarking')
         if mark != None:
             quant = int(mark.find(ns + 'text').text)
+            # Too many initial tokens. Cannot handle it.
+            if quant > 1000000:
+                print ("Skipping file " + fileName + " -- " + str(quant) + " tokens at the initial marking.")
+                return None
             name = p.attrib['id']
             l = [name] * quant
             initMark.extend(l)
@@ -54,6 +58,7 @@ def pnmlToRules (fileName):
     #print ("Transitions [] : " + str(transitions))
     #print ("Arcs -> : " + str(arcs))
 
+    del tree
     return (initMark, rules)
 
 def guardedJoin (l, sep):
@@ -159,12 +164,12 @@ eof
     rules_str = ""
     for r in rules:
         (ant, suc) = rules[r]
-        ant_str = guardedJoin(ant, " ")
-        suc_str = guardedJoin(suc, " ")
-        rules_str += "rl [" + r + "] : " + ant_str + " => " + suc_str + ".\n"
+        ant_str = "'" + guardedJoin(ant, " '")
+        suc_str = "'" + guardedJoin(suc, " '")
+        rules_str += "rl [" + r + "] : " + ant_str + " => " + suc_str + " .\n"
     rules_str += "\n"
 
-    init_str = guardedJoin (initMark, " ")
+    init_str = "'" + guardedJoin (initMark, " '")
 
     return header + fmod + mod.replace('ttttt',rules_str).replace('iiiii', init_str)
 
@@ -213,7 +218,10 @@ for root, dirs, files in os.walk(dir):
         print ("Model " + str(i) + ": " + model_name)
 
         for f in files:
-            (initMark, rules) = pnmlToRules (os.path.join (root, f))
+            res = pnmlToRules (os.path.join (root, f))
+            if res == None:
+                continue
+            (initMark, rules) = res
             maude_model = toMaude (initMark, rules)
             lltp_model = toLLTP (initMark, rules, model_name)
             
