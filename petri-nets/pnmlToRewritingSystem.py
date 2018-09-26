@@ -3,6 +3,43 @@ import os
 import re
 import xml.etree.ElementTree as ET
 
+# This script takes the .pnml files corresponding to P/T petri-nets and rewrites
+# it into a maude file and LLTP file. It assumes the following directory
+# structure: mcc-pnml/ModelName/PT/*.pnml
+#
+# That means that, after downloading all the tar.gz files using the script
+# getPetriNets.sh, you should untar them inside a directory called mcc-pnml.
+#
+# After running this, you should have two new directories: mcc-maude and
+# mcc-lltp, containing the corresponding translations for each .pnml file.
+# They will not be separated in directories, but each file is prefixed by the
+# model name (if it was not already the case).
+#
+#
+# Maude is a system for rewriting logic (http://maude.cs.uiuc.edu/)
+# LLTP is a collection of linear logic problems in a TPTP-like syntax.
+#
+# The transformation of P/T petri-nets into rewriting systems is done as
+# follows.
+# - each place Pi is represented by an atom Pi
+# - each transition is a rewriting rule where
+#   . the antecedents are the atoms denoting source places 
+#   . the succeedents are the atoms denoting target places
+#   . the multiplicity of each atom is the weight of the edge connecting the
+#     place to the transition
+# - each token in place Pi in the initial marking is part of the initial state
+#   of the system
+#
+# The generated maude file can be used to compute the possible final states
+# after a number of rewrites (thanks to Carlos Olarte).
+#
+# The generated LLTP files contain only axioms, no conjectures. They are
+# completed once maude computes the set of possible final states (see script
+# runMaude).
+#
+# Giselle Reis - 2018
+
+
 def pnmlToRules (fileName):
     tree = ET.parse(fileName).getroot()
     # Getting namespace
@@ -238,10 +275,3 @@ for root, dirs, files in os.walk(dir):
                 out.write(lltp_model)
                 out.close()
 
-
-# To linear problem for 150 project.
-#print ('#init: ' + toPrettyString (initMark))
-#
-#for r in rules:
-#    (ant, suc) = rules[r]
-#    print (r + ': ' + guardedJoin (ant, ", ") + ' -o ' + guardedJoin (suc, ", "))
