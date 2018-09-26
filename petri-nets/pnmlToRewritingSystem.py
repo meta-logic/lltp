@@ -87,7 +87,7 @@ def pnmlToRules (fileName):
             (ant, suc) = rules[source]
             l = [target] * quant
             suc.extend(l)
-            rules[target] = (ant, suc)
+            rules[source] = (ant, suc)
         else:
             raise Exception('Arc on undeclared transition. Source: ' + source + '  Target: ' + target)
 
