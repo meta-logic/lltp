@@ -1,5 +1,25 @@
 #!/bin/bash
 
+# This script is used to fetch the tag.gz containing the .pnml files
+# describing each Petri-Net from http://pnrepository.lip6.fr/mcc. 
+
+
+# All the names of models below were obtained from the file
+# https://pnrepository.lip6.fr/mcc/models/all/metadata.json
+# 
+# using this very simple python script:
+# --------------------------------------------
+# import json
+# 
+# with open("pnr-mcc-metadata.json") as f:
+#     data = json.load(f)
+# 
+# for m in data:
+#     print (m["links"][0]["href"])
+# --------------------------------------------
+#
+# And then cutting the URLs (I just did it in a decent text editor)
+
 # Models from Model Checking Contest (MCC)
 models="ARMCacheCoherence
 AirplaneLD
@@ -78,6 +98,9 @@ TokenRing
 TriangularGrid
 UtahNoC
 Vasy2003"
+
+# The commands below for fetching each tar are a minor modification of the ones
+# described it: https://hal.sorbonne-universite.fr/hal-01492419/document
 
 counter=1
 for m in $models; do
