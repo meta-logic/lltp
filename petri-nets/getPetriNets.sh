@@ -2,7 +2,8 @@
 
 # This script is used to fetch the tag.gz containing the .pnml files
 # describing each Petri-Net from http://pnrepository.lip6.fr/mcc. 
-
+#
+# Giselle Reis - 2018
 
 # All the names of models below were obtained from the file
 # https://pnrepository.lip6.fr/mcc/models/all/metadata.json
