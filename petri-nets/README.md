@@ -1,10 +1,14 @@
-`getModels.py` gets the names of all models from the json file. These names are
-copied into the next script.
+The scripts in this folder can be used to fetch petri-nets described in PNML
+format, find reachable states and transform those into theorem proving problems
+in linear logic. 
+Some files are made available here, but the full collection can be much bigger.
+If you want to generate this on your own, you need to run the scripts in the
+following order:
 
-`getPetriNets.sh` fetches the tar file containing the petri-net models from https://pnrepository.lip6.fr/mcc/models/all/browser.html.
+01: `getPetriNets.sh` fetches the tar file containing the petri-net models from https://pnrepository.lip6.fr/mcc/models/all/browser.html.
 
-`toLLTP.py` transforms the XML into a maude file and into a partial LLTP file
+02: `pnmlToRewritingSystem.py` transforms the XML into a maude file and into a partial LLTP file
 (with only axioms, but no conjecture).
 
-`runMaude.sh` runs maude to get the reachable states after a number of steps and
+03: `runMaude.sh` runs maude to get the reachable states after a number of steps and
 creates complete LLTP files with the state as the conjecture.
