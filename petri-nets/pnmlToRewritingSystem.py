@@ -232,7 +232,7 @@ def toLLTP (initMark, rules, model_name):
         (ant, suc) = rules[r]
         ant_str = guardedJoin(ant, " * ")
         suc_str = guardedJoin(suc, " * ")
-        rule_str = "fof(" + r + ", axiom, (" + ant_str + ") -o (" + suc_str + ") ).\n"
+        rule_str = "fof(" + r + ", axiom, !( (" + ant_str + ") -o (" + suc_str + ") ) ).\n"
         axioms += rule_str
 
     return header + axioms
