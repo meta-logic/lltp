@@ -13,8 +13,10 @@ steps=( 5 20 50 100 )
 mkdir MCC
 
 # Processing the files from smallest to biggest
+counter_f=1
 for f in `ls -Sr mcc-maude/*`; do
-  echo "---> Processing $f"
+  echo "---> File ${counter_f}: $f"
+  counter_f=$((counter_f+1))
   bn=$(basename $f)
   root="${bn%.*}"
   lltp_file=mcc-lltp/${root}.lltp.part
@@ -33,7 +35,7 @@ for f in `ls -Sr mcc-maude/*`; do
       IFS=$'\n'
       for r in $results; do
  
-        echo " Result ${counter}: $r"
+        #echo " Result ${counter}: $r"
  
         file=MCC/${root}_${s}_${counter}.p
         echo " $s steps: writing file $file"
