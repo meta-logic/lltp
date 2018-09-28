@@ -154,6 +154,12 @@ fmod SYNTAX is
     op empSM : -> SMarking [ctor] .
     op _,,_ : SMarking SMarking -> SMarking [ctor assoc comm id: empSM] .
     eq M ,, M = M . --- idempotency
+
+    --- Configurations
+    sort Conf .
+    op {_;_} : Nat Marking -> Conf [ctor] .
+    op make : Nat Marking -> Conf .
+    eq make(n, M) = { n ; M } .
 endfm
 """
 
@@ -164,27 +170,7 @@ mod BUILD-TEST is
     var n : Nat .
     var Q : Qid .
     var M : Marking .
-    var SM : SMarking .
     --------------
-
-    --- Generating n rewriting from the initial marking
-    op benchRewrite : Nat Marking -> Marking .
-    eq benchRewrite(n, M) = downTerm(getTerm(metaRewrite(upModule('BUILD-TEST, false), upTerm(M), n)), empty) .
-
-    --- Computing all the possible successor states of a marking
-    op successor : SMarking -> SMarking [ctor] .
-    eq successor(empSM) = empSM .
-    eq successor( (M,, SM)) = successor$(M) ,, successor(SM) .
-    op successor$ : Marking -> SMarking [ctor] .
-    eq successor$(M) = successor$$(0, M) .
-    op successor$$ : Nat Marking -> SMarking [ctor] .
-    ceq successor$$(n, M) = if SM == emp then empSM else (SM ,, successor$$(s n , M)) fi
-      if SM := downTerm(getTerm(metaSearch(upModule('BUILD-TEST, false), upTerm(M), 'M2:Marking, nil, '+ , 1, n)), emp) .
-
-      --- The markings reachable with *exactly* n steps
-    op successor : Nat Marking -> SMarking .
-    eq successor(0, M) = M .
-    eq successor(s n, M) = successor(successor(n, M)) .
 
     --- Transitions
     ttttt
@@ -192,7 +178,6 @@ mod BUILD-TEST is
     --- Initial Marking
     op init : -> Marking .
     eq init = iiiii .
-    
 endm
 
 eof
@@ -203,7 +188,7 @@ eof
         (ant, suc) = rules[r]
         ant_str = "'" + guardedJoin(ant, " '")
         suc_str = "'" + guardedJoin(suc, " '")
-        rules_str += "rl [" + r + "] : " + ant_str + " => " + suc_str + " .\n"
+        rules_str += "rl [" + r + "] : { s n ; M " + ant_str + "} => { n ; M " + suc_str + "} .\n"
     rules_str += "\n"
 
     init_str = "'" + guardedJoin (initMark, " '")
@@ -223,7 +208,6 @@ def toLLTP (initMark, rules, model_name):
 %
 % Status (linear) : Theorem
 % Rating (linear) : 0.00 v1.0.0
-%--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
 """.replace('xxxx', model_name)
 

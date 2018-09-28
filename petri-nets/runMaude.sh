@@ -9,7 +9,7 @@
 #
 # Giselle Reis - 2018
 
-steps=( 5 20 50 100 )
+steps=( 1 5 10 20 50 100 )
 mkdir MCC
 
 # Processing the files from smallest to biggest
@@ -27,7 +27,7 @@ for f in `ls -Sr mcc-maude/*`; do
     #results=$(echo "red successor(${steps}, init) ." | maude.linux64 -no-wrap -batch $f  | grep result | sed 's/result SMarking: //g ; s/(//g ; s/)//g' | tr ",," "\n")
 
     # Finds one reachable state
-    results=$(echo "red benchRewrite(${s}, init) ." | maude -no-wrap -batch $f  | grep result | sed 's/result \(EmptyCommaList\|Marking\): //g' )
+    results=$(echo "search [1] make(${s}, init) =>* {0 ; M:Marking} ." | maude -no-wrap -batch $f  | grep "M -->" | sed 's/M --> //g' )
   
     if [ "$results" != "empSM" ] && [ "$results" != "empty" ]; then
  
@@ -43,6 +43,8 @@ for f in `ls -Sr mcc-maude/*`; do
         cat $lltp_file > ${file}
         conj=$(echo $r  | tr -d "'" | sed 's/ / \* /g')
         echo "fof(con1, conjecture, ${conj})." >> ${file}
+        echo "" >> ${file}
+        echo "%--------------------------------------------------------------------------" >> ${file}
         counter=$((counter+1))
       done
     else
