@@ -12,11 +12,8 @@
 steps=( 1 5 10 20 50 100 )
 mkdir MCC
 
-# Processing the files from smallest to biggest
-counter_f=1
-for f in `ls -Sr mcc-maude/*`; do
-  echo "---> File ${counter_f}: $f"
-  counter_f=$((counter_f+1))
+function runMaude {
+  f=$1  
   bn=$(basename $f)
   root="${bn%.*}"
   lltp_file=mcc-lltp/${root}.lltp.part
@@ -51,4 +48,13 @@ for f in `ls -Sr mcc-maude/*`; do
       echo " $s steps: no reachable state."
     fi
   done
+}
+
+# Processing the files from smallest to biggest
+counter_f=1
+for f in `ls -Sr mcc-maude/*`; do
+  echo "---> File ${counter_f}: $f"
+  counter_f=$((counter_f+1))
+
+  runMaude $f &
 done
