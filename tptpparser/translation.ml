@@ -46,8 +46,8 @@ let fresh =
   let count = ref 0 in
     fun () -> incr count; !count
 
-let to_axiom f = "fof(ax" ^ (string_of_int (fresh())) ^ ", axiom, " ^ (llformula_to_string f) ^ ")." 
-let to_conjecture f = "fof(con" ^ (string_of_int (fresh())) ^ ", conjecture, " ^ (llformula_to_string f) ^ ")."
+let to_axiom f = "fof(ax" ^ (string_of_int (fresh())) ^ ", axiom, !(" ^ (llformula_to_string f) ^ ")). \n" 
+let to_conjecture f = "fof(con" ^ (string_of_int (fresh())) ^ ", conjecture, " ^ (llformula_to_string f) ^ "). \n"
 
 let rec term_to_sellf_string t = match t with
   | VAR(s) -> s
