@@ -11,6 +11,12 @@ let position lexbuf =
     else
       print_string "";Format.sprintf ": line %d, character %d" line char
 
+let rec take l n = match n with
+  | 1 -> (List.tl l, List.hd l)
+  | _ -> 
+    let (rest, elt) = take (List.tl l) (n-1) in
+    ((List.hd l)::rest, elt)
+
 let _ = 
   try
     let file_name = Sys.argv.(1) in
@@ -21,9 +27,11 @@ let _ =
       (* Translating *)
       let llseq = translate problem girard in
       (* Printing LL problem to stdout *)
-      List.iter (fun l -> print_endline l) info;
-      print_endline (LLSequent.to_lltp llseq)
+      let (header, footer) = take info (List.length info) in
+      List.iter (fun l -> print_endline l) header;
+      print_endline (LLSequent.to_lltp llseq);
       (*print_endline (LLSequent.to_sellf llseq)*)
+      print_endline footer
     with 
       | Parsing.Parse_error ->  
         Format.printf "Syntax error while parsing file %s at %s.\n%!" file_name (position lexbuf); 
