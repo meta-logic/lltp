@@ -23,7 +23,7 @@ using a program in [maude](http://maude.cs.uiuc.edu/).
 ---
 
 [1] _Petri Nets and Linear Logic: a case study for logic programming._ Iliano Cervesato. 
-1995 Joint Conference on Declarative Programming — GULP-PRODE'9 [pdf](https://web2.qatar.cmu.edu/iliano/papers/gulp95.pdf)
+1995 Joint Conference on Declarative Programming — GULP-PRODE'9 [[pdf](https://web2.qatar.cmu.edu/iliano/papers/gulp95.pdf)]
 
 ---
 
