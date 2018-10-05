@@ -25,7 +25,7 @@ let _ =
     try
       let (problem, info) = Tptpparser.file Tptplexer.tptp lexbuf in
       (* Translating *)
-      let llseq = translate problem girard in
+      let llseq = translate problem girardCBN in
       (* Printing LL problem to stdout *)
       let (header, footer) = take info (List.length info) in
       List.iter (fun l -> print_endline l) header;
