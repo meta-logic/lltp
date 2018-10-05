@@ -122,6 +122,7 @@ end;;
 type translation =
   | CBN
   | CBV
+  | LM01
 
 
 (* Girard's call-by-name translation: IL to LL
@@ -170,6 +171,42 @@ let rec girardCBV f = match f with
   | EXISTS(s, f1) -> LLEXISTS(s, girard f1) *)
 
 
+
+(* Liang and Miller's 0/1 translation:
+ *
+ * t0(A) = A
+ * t0(true) = top
+ * t0(false) = 0
+ * t0(A /\ B) = ! t0(A) & ! t0(B)
+ * t0(A \/ B) = ! t0(A) + ! t0(B)
+ * t0(A -> B) = ! t1(A) -o ! t0(B)
+ *
+ * t1(A) = A
+ * t1(true) = 1
+ * t1(false) = 0
+ * t1(A /\ B) = ! (t1(A) & t1(B))
+ * t1(A \/ B) = ! t1(A) + ! t1(B)
+ * t1(A -> B) = ! (! t0(A) -o t1(B))
+ *)
+let rec zero_one_0 f = match f with
+  | ATOM(s, tl) -> LLATOM(s, tl)
+  | TRUE -> TOP
+  | FALSE -> ZERO
+  | AND(f1, f2) -> WITH(BANG(zero_one_0 f1), BANG(zero_one_0 f2))
+  | OR(f1, f2) -> PLUS(BANG(zero_one_0 f1), BANG(zero_one_0 f2))
+  | IMP(f1, f2) -> LOLLI(BANG(zero_one_1 f1), BANG(zero_one_0 f2))
+  | NEG(f1) -> zero_one_0 (IMP(f1, FALSE))
+and zero_one_1 f = match f with
+  | ATOM(s, tl) -> LLATOM(s, tl)
+  | TRUE -> ONE
+  | FALSE -> ZERO
+  | AND(f1, f2) -> BANG(WITH(zero_one_1 f1, zero_one_1 f2))
+  | OR(f1, f2) -> PLUS(BANG(zero_one_1 f1), BANG(zero_one_1 f2))
+  | IMP(f1, f2) -> BANG(LOLLI(BANG(zero_one_0 f1), zero_one_1 f2))
+  | NEG(f1) -> zero_one_1 (IMP(f1, FALSE))
+
+
 let toLL t seq = match t with
-  | CBN -> LLSequent.create (List.map (fun f -> BANG(girardCBN f)) seq.hypotheses) (List.map girardCBN seq.goals)
-  | CBV -> LLSequent.create (List.map girardCBV seq.hypotheses) (List.map girardCBV seq.goals)
+  | CBN  -> LLSequent.create (List.map (fun f -> BANG(girardCBN f)) seq.hypotheses) (List.map girardCBN seq.goals)
+  | CBV  -> LLSequent.create (List.map girardCBV seq.hypotheses) (List.map girardCBV seq.goals)
+  | LM01 -> LLSequent.create (List.map (fun f -> BANG(zero_one_0 f)) seq.hypotheses) (List.map zero_one_1 seq.goals)
