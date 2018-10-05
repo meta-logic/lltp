@@ -46,7 +46,7 @@ let fresh =
   let count = ref 0 in
     fun () -> incr count; !count
 
-let to_axiom f = "fof(ax" ^ (string_of_int (fresh())) ^ ", axiom, !(" ^ (llformula_to_string f) ^ ")). \n" 
+let to_axiom f = "fof(ax" ^ (string_of_int (fresh())) ^ ", axiom, " ^ (llformula_to_string f) ^ "). \n" 
 let to_conjecture f = "fof(con" ^ (string_of_int (fresh())) ^ ", conjecture, " ^ (llformula_to_string f) ^ "). \n"
 
 let rec term_to_sellf_string t = match t with
@@ -57,7 +57,6 @@ let rec term_to_sellf_string t = match t with
     "(" ^ s ^ " " ^ (List.fold_left (fun acc t -> acc ^ " " ^ (term_to_sellf_string t)) head tail) ^ ")"
     with 
       Failure "hd" -> s
-
 
 let rec llformula_to_sellf_string f = match f with
   | LLATOM(s, args) -> begin try
@@ -119,18 +118,21 @@ module LLSequent = struct
 
 end;;
 
-(* Translated sequent seq using translation function trans *)
-let translate seq trans = LLSequent.create (List.map trans seq.hypotheses) (List.map trans seq.goals)
+(* Translation functions *)
+type translation =
+  | CBN
+  | CBV
+
 
 (* Girard's call-by-name translation: IL to LL
  * from Linear Logic (1987)
  *
  * A = A
- * A /\ B = A & B
- * A -> B = !A -o B
- * A \/ B = !A + !B
- * false = 0
  * true = top
+ * false = 0
+ * A /\ B = A & B
+ * A \/ B = !A + !B
+ * A -> B = !A -o B
  *)
 let rec girardCBN f = match f with
   | ATOM(s, tl) -> LLATOM(s, tl)
@@ -144,3 +146,30 @@ let rec girardCBN f = match f with
   | FORALL(s, f1) -> LLFORALL(s, girard f1)
   | EXISTS(s, f1) -> LLEXISTS(s, girard f1) *)
 
+
+(* Girard's call-by-value translation: IL to LL
+ * from Linear Logic (1987)
+ *
+ * A = !A
+ * true = 1
+ * false = 0
+ * A /\ B = A * B
+ * A \/ B = A + B
+ * A -> B = !(A -o B)
+ *)
+let rec girardCBV f = match f with
+  | ATOM(s, tl) -> BANG(LLATOM(s, tl))
+  | TRUE -> ONE
+  | FALSE -> ZERO
+  | AND(f1, f2) -> TENSOR(girardCBV f1, girardCBV f2)
+  | OR(f1, f2) -> PLUS(girardCBV f1, girardCBV f2)
+  | IMP(f1, f2) -> BANG(LOLLI(girardCBV f1, girardCBV f2))
+  | NEG(f1) -> BANG(LOLLI(girardCBV f1, ZERO))
+  (* Propositional, for now
+  | FORALL(s, f1) -> LLFORALL(s, girard f1)
+  | EXISTS(s, f1) -> LLEXISTS(s, girard f1) *)
+
+
+let toLL t seq = match t with
+  | CBN -> LLSequent.create (List.map (fun f -> BANG(girardCBN f)) seq.hypotheses) (List.map girardCBN seq.goals)
+  | CBV -> LLSequent.create (List.map girardCBV seq.hypotheses) (List.map girardCBV seq.goals)
