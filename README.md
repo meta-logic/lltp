@@ -4,7 +4,8 @@ Benchmark of problems for linear logic provers
 
 
 This repository contains a collection of theorem proving problems for linear logic provers. 
-It follows a syntax similar to the one of [TPTP](http://tptp.org/). Formulas are built from 
+It follows a syntax similar to the one of [TPTP](http://tptp.org/).  
+Formulas are built from 
 
 ```
 F ::= *, &, +, |, -o, !, ?
@@ -33,7 +34,7 @@ Some results on these problems can be found [here](https://github.com/carlosolar
 
 [2] _Focusing and Polarization in Linear, Intuitionistic, and Classical Logic_ by Chuck Liang and Dale Miller. Theoretical Computer Science, 410(46), pp. 4747-4768 (2009) [[pdf](http://www.lix.polytechnique.fr/Labo/Dale.Miller/papers/tcs09fixed.pdf)]
 
-[1] _Petri Nets and Linear Logic: a case study for logic programming_ by Iliano Cervesato. 
+[3] _Petri Nets and Linear Logic: a case study for logic programming_ by Iliano Cervesato. 
 1995 Joint Conference on Declarative Programming — GULP-PRODE'9 [[pdf](https://web2.qatar.cmu.edu/iliano/papers/gulp95.pdf)]
 
 ---
