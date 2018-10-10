@@ -1,4 +1,16 @@
-The scripts in this folder can be used to fetch petri-nets described in PNML
+The collection of petr-net problems for linear logic provers is split into two
+files: [MCC.tar.gz.1](https://github.com/meta-logic/lltp/blob/master/petri-nets/MCC.tar.gz.1) 
+and [MCC.tar.gz.2](https://github.com/meta-logic/lltp/blob/master/petri-nets/MCC.tar.gz.2).
+In order to extract them, use the following command:
+
+```
+cat MCC.tar.gz.* | tar -xzv
+```
+
+---
+
+If you want to obtain more, or different problems,
+the scripts in this folder can be used to fetch petri-nets described in PNML
 format, find reachable states and transform those into theorem proving problems
 in linear logic. 
 Some files are made available here, but the full collection can be much bigger.
