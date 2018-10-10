@@ -18,7 +18,9 @@ The problems were obtained from three sources:
 3. Petri-nets from the [Model Checking Contest](https://pnrepository.lip6.fr/mcc/)
 
 The collections ILLTP-\* and KLE-\* are obtained via the translations call-by-name, call-by-value [1] and Liang and Miller's 0/1 [2],
-applied to the problems from sources 1 and 2 above.
+applied to the problems from sources 1 and 2 above. Collection KLE-IMP-CONJ considers the fragment of intuitionistic logic with implication and conjunction. The above mentioned translations are used as well as the multiplicative 
+translation that substitutes the intuitionistic connectives by their multiplicative linear version. This translation does not preserve provability. The directory ALT in this collection proposes an alternative translation for the non-provable sequent with a small set of bangs and/or additives.
+
 
 The collection [MCC](https://github.com/meta-logic/lltp/blob/master/petri-nets/MCC.tar.gz.1) (split into two files)
 was obtained by encoding the petri-nets from 3 using the ideas from [3], and finding reachable states 
