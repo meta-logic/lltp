@@ -1,0 +1,88 @@
+KLE-01/KLE001+1.p ; 21 ;  true
+KLE-01/KLE002+1.p ; 166 ;  true
+KLE-01/KLE003+1.p ; 156 ;  true
+KLE-01/KLE004+1.p ; 157 ;  true
+KLE-01/KLE005+1.p ; 331 ;  true
+KLE-01/KLE006+1.p ; 162 ;  true
+KLE-01/KLE007+1.p ; 165 ;  true
+KLE-01/KLE008+1.p ; 146 ;  true
+KLE-01/KLE009+1.p ; 148 ;  true
+KLE-01/KLE010+1.p ; 259 ;  true
+KLE-01/KLE011+1.p ; 164 ;  true
+KLE-01/KLE012+1.p ; 141 ;  true
+KLE-01/KLE013+1.p ;  ; timeout
+KLE-01/KLE014+1.p ; 17 ;  true
+KLE-01/KLE015+1.p ;  ; timeout
+KLE-01/KLE016+1.p ; 160 ;  true
+KLE-01/KLE017+1.p ;  ; timeout
+KLE-01/KLE018+1.p ; 189 ;  true
+KLE-01/KLE019+1.p ; 203 ;  true
+KLE-01/KLE020+1.p ; 166 ;  true
+KLE-01/KLE021+1.p ; 147 ;  true
+KLE-01/KLE022+1.p ; 156 ;  true
+KLE-01/KLE023+1.p ; 144 ;  true
+KLE-01/KLE024+1.p ; 21 ;  true
+KLE-01/KLE025+1.p ; 189 ;  true
+KLE-01/KLE026+1.p ; 209 ;  true
+KLE-01/KLE027+1.p ; 814 ;  true
+KLE-01/KLE028+1.p ; 202 ;  true
+KLE-01/KLE029+1.p ; 271 ;  true
+KLE-01/KLE030+1.p ; 1059 ;  true
+KLE-01/KLE031+1.p ; 5482 ;  true
+KLE-01/KLE032+1.p ; 204 ;  true
+KLE-01/KLE033+1.p ; 219 ;  true
+KLE-01/KLE034+1.p ; 225 ;  true
+KLE-01/KLE035+1.p ; 211 ;  true
+KLE-01/KLE036+1.p ; 990 ;  true
+KLE-01/KLE037+1.p ; 385 ;  true
+KLE-01/KLE038+1.p ; 580 ;  true
+KLE-01/KLE039+1.p ; 38 ;  true
+KLE-01/KLE040+1.p ; 766 ;  true
+KLE-01/KLE041+1.p ; 39 ;  true
+KLE-01/KLE042+1.p ; 185 ;  true
+KLE-01/KLE043+1.p ; 246 ;  true
+KLE-01/KLE044+1.p ; 498 ;  true
+KLE-01/KLE045+1.p ; 33 ;  true
+KLE-01/KLE046+1.p ; 30 ;  true
+KLE-01/KLE047+1.p ; 33 ;  true
+KLE-01/KLE048+1.p ; 38 ;  true
+KLE-01/KLE049+1.p ; 43 ;  true
+KLE-01/KLE050+1.p ; 32 ;  true
+KLE-01/KLE051+1.p ; 164 ;  true
+KLE-01/KLE052+1.p ; 188 ;  true
+KLE-01/KLE053+1.p ; 33 ;  true
+KLE-01/KLE054+1.p ; 32 ;  true
+KLE-01/KLE055+1.p ; 173 ;  true
+KLE-01/KLE056+1.p ; 175 ;  true
+KLE-01/KLE057+1.p ; 30 ;  true
+KLE-01/KLE058+1.p ; 165 ;  true
+KLE-01/KLE059+1.p ; 200 ;  true
+KLE-01/KLE060+1.p ; 213 ;  true
+KLE-01/KLE061+1.p ; 28 ;  true
+KLE-01/KLE062+1.p ; 248 ;  true
+KLE-01/KLE063+1.p ; 145 ;  true
+KLE-01/KLE064+1.p ; 144 ;  true
+KLE-01/KLE065+1.p ; 17 ;  true
+KLE-01/KLE066+1.p ; 41 ;  true
+KLE-01/KLE067+1.p ; 44 ;  true
+KLE-01/KLE068+1.p ;  ; timeout
+KLE-01/KLE069+1.p ;  ; timeout
+KLE-01/KLE070+1.p ; 162 ;  true
+KLE-01/KLE071+1.p ; 144 ;  true
+KLE-01/KLE072+1.p ; 149 ;  true
+KLE-01/KLE073+1.p ; 159 ;  true
+KLE-01/KLE074+1.p ;  ; timeout
+KLE-01/KLE075+1.p ;  ; timeout
+KLE-01/KLE076+1.p ; 162 ;  true
+KLE-01/KLE077+1.p ; 164 ;  true
+KLE-01/KLE078+1.p ;  ; timeout
+KLE-01/KLE079+1.p ; 168 ;  true
+KLE-01/KLE080+1.p ; 35 ;  true
+KLE-01/KLE081+1.p ; 150 ;  true
+KLE-01/KLE082+1.p ; 158 ;  true
+KLE-01/KLE083+1.p ;  ; timeout
+KLE-01/KLE084+1.p ; 41548 ;  true
+KLE-01/KLE085+1.p ;  ; timeout
+KLE-01/KLE086+1.p ;  ; timeout
+KLE-01/KLE087+1.p ; 159 ;  true
+KLE-01/KLE088+1.p ;  ; timeout

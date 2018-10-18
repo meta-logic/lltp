@@ -29,6 +29,10 @@ using a program in [maude](http://maude.cs.uiuc.edu/).
 
 Some results on these problems can be found [here](https://github.com/carlosolarte/Linear-Logic-Prover-in-Maude) and [here](https://github.com/wujuihsuan2016/LL_prover). 
 
+The current status for all the collections can be found in the TXT files. Those results were obtained with [this prover](https://github.com/carlosolarte/Linear-Logic-Prover-in-Maude).
+
+
+
 ---
 [1] _Linear Logic_ by Jean-Yves Girard. Theoretical Computer Science (50), pp. 1-102 (1987)
 
