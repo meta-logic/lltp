@@ -10,7 +10,7 @@ KLE-cbv/KLE009+1.p ; 141 ;  true
 KLE-cbv/KLE010+1.p ; 140 ;  true
 KLE-cbv/KLE011+1.p ; 153 ;  true
 KLE-cbv/KLE012+1.p ; 140 ;  true
-KLE-cbv/KLE013+1.p ; timeout ; timeout
+KLE-cbv/KLE013+1.p ; 60 ;  false
 KLE-cbv/KLE014+1.p ; 17 ;  true
 KLE-cbv/KLE015+1.p ; timeout ; timeout
 KLE-cbv/KLE016+1.p ; 146 ;  true
@@ -65,7 +65,7 @@ KLE-cbv/KLE064+1.p ; 173 ;  true
 KLE-cbv/KLE065+1.p ; 150 ;  true
 KLE-cbv/KLE066+1.p ; 45 ;  true
 KLE-cbv/KLE067+1.p ; 58 ;  true
-KLE-cbv/KLE068+1.p ; timeout ; timeout
+KLE-cbv/KLE068+1.p ; 98 ; false
 KLE-cbv/KLE069+1.p ; timeout ; timeout
 KLE-cbv/KLE070+1.p ; 158 ;  true
 KLE-cbv/KLE071+1.p ; 31 ;  true
@@ -82,7 +82,7 @@ KLE-cbv/KLE081+1.p ; 162 ;  true
 KLE-cbv/KLE082+1.p ; 170 ;  true
 KLE-cbv/KLE083+1.p ; timeout ; timeout
 KLE-cbv/KLE084+1.p ; 24427 ;  true
-KLE-cbv/KLE085+1.p ; timeout ; timeout
+KLE-cbv/KLE085+1.p ; 124 ; false 
 KLE-cbv/KLE086+1.p ; timeout ; timeout
 KLE-cbv/KLE087+1.p ; 165 ;  true
 KLE-cbv/KLE088+1.p ; timeout ; timeout

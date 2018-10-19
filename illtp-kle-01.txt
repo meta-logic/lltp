@@ -10,7 +10,7 @@ KLE-01/KLE009+1.p ; 148 ;  true
 KLE-01/KLE010+1.p ; 259 ;  true
 KLE-01/KLE011+1.p ; 164 ;  true
 KLE-01/KLE012+1.p ; 141 ;  true
-KLE-01/KLE013+1.p ;  ; timeout
+KLE-01/KLE013+1.p ; 68  ;  false
 KLE-01/KLE014+1.p ; 17 ;  true
 KLE-01/KLE015+1.p ;  ; timeout
 KLE-01/KLE016+1.p ; 160 ;  true
