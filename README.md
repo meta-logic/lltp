@@ -42,7 +42,7 @@ The current status for all the collections can be found in the TXT files. Those 
 ### Classical problems
 The problems in the directory  ``CLL``
 
-##References
+## References
 [1] _Linear Logic_ by Jean-Yves Girard. Theoretical Computer Science (50), pp. 1-102 (1987)
 
 [2] _Focusing and Polarization in Linear, Intuitionistic, and Classical Logic_ by Chuck Liang and Dale Miller. Theoretical Computer Science, 410(46), pp. 4747-4768 (2009) [[pdf](http://www.lix.polytechnique.fr/Labo/Dale.Miller/papers/tcs09fixed.pdf)]
