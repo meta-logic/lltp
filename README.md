@@ -16,6 +16,11 @@ F ::= bot, top, 0, 1, *, &, |, +, -o, !, ?, ^
 ```
 representing, respectively, the units, the connectives  tensor, with, par, plus, lolli, bang, question mark and orthogonal. 
 
+Axioms (formulas on the left side of the sequent) and conjectures (the formula on the right side of the sequent) are
+specified as ``fof(name, axiom, F)`` and ``fof(name, conjecture, F)`` respectively. The ``name`` chosen is not important.
+
+
+
 ## Problems
 ### Intuitionistic problems
 The problems in the directory  ``ILL``  were obtained from three sources:
