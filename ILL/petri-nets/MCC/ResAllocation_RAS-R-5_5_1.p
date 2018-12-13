@@ -1,0 +1,28 @@
+
+%--------------------------------------------------------------------------
+% File     : 
+% Domain   : Petri-nets
+% Problem  : ResAllocation 
+% Version  : 1.0
+% Refs     : The Model Checking Contest
+% Source   : https://pnrepository.lip6.fr/mcc/models/all/browser.html
+%
+% Status (linear) : Theorem
+% Rating (linear) : 0.00 v1.0.0
+%--------------------------------------------------------------------------
+fof(inital_state, axiom, r_0_0 * r_0_1 * r_0_2 * r_0_3 * r_0_4 * r_1_0 * r_1_1 * r_1_2 * r_1_3 * r_1_4).
+fof(t_1_2, axiom, !( (r_0_1 * r_1_1 * p_1_2) -o (r_0_2 * p_1_1 * r_1_2) ) ).
+fof(t_0_3, axiom, !( (p_0_2 * r_0_3) -o (r_0_2 * p_0_3) ) ).
+fof(t_0_5, axiom, !( (p_0_4) -o (r_0_4) ) ).
+fof(t_0_1, axiom, !( (p_0_0 * r_0_1) -o (r_0_0 * p_0_1) ) ).
+fof(t_0_2, axiom, !( (p_0_1 * r_0_2) -o (r_0_1 * p_0_2) ) ).
+fof(t_1_0, axiom, !( (p_1_0) -o (r_0_0 * r_1_0) ) ).
+fof(t_1_3, axiom, !( (r_0_2 * r_1_2 * p_1_3) -o (r_0_3 * p_1_2 * r_1_3) ) ).
+fof(t_1_5, axiom, !( (r_0_4 * r_1_4) -o (p_1_4) ) ).
+fof(t_0_4, axiom, !( (p_0_3 * r_0_4) -o (r_0_3 * p_0_4) ) ).
+fof(t_1_4, axiom, !( (r_0_3 * r_1_3 * p_1_4) -o (r_0_4 * p_1_3 * r_1_4) ) ).
+fof(t_1_1, axiom, !( (r_0_0 * r_1_0 * p_1_1) -o (r_0_1 * p_1_0 * r_1_1) ) ).
+fof(t_0_0, axiom, !( (r_0_0) -o (p_0_0) ) ).
+fof(con1, conjecture, p_1_1 * p_1_4 * r_0_0 * r_0_2 * r_0_3 * r_1_0 * r_1_2 * r_1_3).
+
+%--------------------------------------------------------------------------

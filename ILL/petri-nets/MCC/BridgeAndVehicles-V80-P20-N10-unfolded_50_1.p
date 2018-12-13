@@ -1,0 +1,2123 @@
+
+%--------------------------------------------------------------------------
+% File     : 
+% Domain   : Petri-nets
+% Problem  : BridgeAndVehicles 
+% Version  : 1.0
+% Refs     : The Model Checking Contest
+% Source   : https://pnrepository.lip6.fr/mcc/models/all/browser.html
+%
+% Status (linear) : Theorem
+% Rating (linear) : 0.00 v1.0.0
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+fof(inital_state, axiom, ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * NB_ATTENTE_A_0 * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * NB_ATTENTE_B_0 * CHOIX_1 * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * COMPTEUR_0).
+fof(enregistrement_A_0, axiom, !( (ROUTE_A * NB_ATTENTE_A_0) -o (NB_ATTENTE_A_1 * ATTENTE_A) ) ).
+fof(enregistrement_A_1, axiom, !( (ROUTE_A * NB_ATTENTE_A_1) -o (NB_ATTENTE_A_2 * ATTENTE_A) ) ).
+fof(enregistrement_A_2, axiom, !( (ROUTE_A * NB_ATTENTE_A_2) -o (NB_ATTENTE_A_3 * ATTENTE_A) ) ).
+fof(enregistrement_A_3, axiom, !( (ROUTE_A * NB_ATTENTE_A_3) -o (NB_ATTENTE_A_4 * ATTENTE_A) ) ).
+fof(enregistrement_A_4, axiom, !( (ROUTE_A * NB_ATTENTE_A_4) -o (NB_ATTENTE_A_5 * ATTENTE_A) ) ).
+fof(enregistrement_A_5, axiom, !( (ROUTE_A * NB_ATTENTE_A_5) -o (NB_ATTENTE_A_6 * ATTENTE_A) ) ).
+fof(enregistrement_A_6, axiom, !( (ROUTE_A * NB_ATTENTE_A_6) -o (NB_ATTENTE_A_7 * ATTENTE_A) ) ).
+fof(enregistrement_A_7, axiom, !( (ROUTE_A * NB_ATTENTE_A_7) -o (NB_ATTENTE_A_8 * ATTENTE_A) ) ).
+fof(enregistrement_A_8, axiom, !( (ROUTE_A * NB_ATTENTE_A_8) -o (NB_ATTENTE_A_9 * ATTENTE_A) ) ).
+fof(enregistrement_A_9, axiom, !( (ROUTE_A * NB_ATTENTE_A_9) -o (NB_ATTENTE_A_10 * ATTENTE_A) ) ).
+fof(enregistrement_A_10, axiom, !( (ROUTE_A * NB_ATTENTE_A_10) -o (NB_ATTENTE_A_11 * ATTENTE_A) ) ).
+fof(enregistrement_A_11, axiom, !( (ROUTE_A * NB_ATTENTE_A_11) -o (NB_ATTENTE_A_12 * ATTENTE_A) ) ).
+fof(enregistrement_A_12, axiom, !( (ROUTE_A * NB_ATTENTE_A_12) -o (NB_ATTENTE_A_13 * ATTENTE_A) ) ).
+fof(enregistrement_A_13, axiom, !( (ROUTE_A * NB_ATTENTE_A_13) -o (NB_ATTENTE_A_14 * ATTENTE_A) ) ).
+fof(enregistrement_A_14, axiom, !( (ROUTE_A * NB_ATTENTE_A_14) -o (NB_ATTENTE_A_15 * ATTENTE_A) ) ).
+fof(enregistrement_A_15, axiom, !( (ROUTE_A * NB_ATTENTE_A_15) -o (NB_ATTENTE_A_16 * ATTENTE_A) ) ).
+fof(enregistrement_A_16, axiom, !( (ROUTE_A * NB_ATTENTE_A_16) -o (NB_ATTENTE_A_17 * ATTENTE_A) ) ).
+fof(enregistrement_A_17, axiom, !( (ROUTE_A * NB_ATTENTE_A_17) -o (NB_ATTENTE_A_18 * ATTENTE_A) ) ).
+fof(enregistrement_A_18, axiom, !( (ROUTE_A * NB_ATTENTE_A_18) -o (NB_ATTENTE_A_19 * ATTENTE_A) ) ).
+fof(enregistrement_A_19, axiom, !( (ROUTE_A * NB_ATTENTE_A_19) -o (NB_ATTENTE_A_20 * ATTENTE_A) ) ).
+fof(enregistrement_A_20, axiom, !( (ROUTE_A * NB_ATTENTE_A_20) -o (NB_ATTENTE_A_21 * ATTENTE_A) ) ).
+fof(enregistrement_A_21, axiom, !( (ROUTE_A * NB_ATTENTE_A_21) -o (NB_ATTENTE_A_22 * ATTENTE_A) ) ).
+fof(enregistrement_A_22, axiom, !( (ROUTE_A * NB_ATTENTE_A_22) -o (NB_ATTENTE_A_23 * ATTENTE_A) ) ).
+fof(enregistrement_A_23, axiom, !( (ROUTE_A * NB_ATTENTE_A_23) -o (NB_ATTENTE_A_24 * ATTENTE_A) ) ).
+fof(enregistrement_A_24, axiom, !( (ROUTE_A * NB_ATTENTE_A_24) -o (NB_ATTENTE_A_25 * ATTENTE_A) ) ).
+fof(enregistrement_A_25, axiom, !( (ROUTE_A * NB_ATTENTE_A_25) -o (NB_ATTENTE_A_26 * ATTENTE_A) ) ).
+fof(enregistrement_A_26, axiom, !( (ROUTE_A * NB_ATTENTE_A_26) -o (NB_ATTENTE_A_27 * ATTENTE_A) ) ).
+fof(enregistrement_A_27, axiom, !( (ROUTE_A * NB_ATTENTE_A_27) -o (NB_ATTENTE_A_28 * ATTENTE_A) ) ).
+fof(enregistrement_A_28, axiom, !( (ROUTE_A * NB_ATTENTE_A_28) -o (NB_ATTENTE_A_29 * ATTENTE_A) ) ).
+fof(enregistrement_A_29, axiom, !( (ROUTE_A * NB_ATTENTE_A_29) -o (NB_ATTENTE_A_30 * ATTENTE_A) ) ).
+fof(enregistrement_A_30, axiom, !( (ROUTE_A * NB_ATTENTE_A_30) -o (NB_ATTENTE_A_31 * ATTENTE_A) ) ).
+fof(enregistrement_A_31, axiom, !( (ROUTE_A * NB_ATTENTE_A_31) -o (NB_ATTENTE_A_32 * ATTENTE_A) ) ).
+fof(enregistrement_A_32, axiom, !( (ROUTE_A * NB_ATTENTE_A_32) -o (NB_ATTENTE_A_33 * ATTENTE_A) ) ).
+fof(enregistrement_A_33, axiom, !( (ROUTE_A * NB_ATTENTE_A_33) -o (NB_ATTENTE_A_34 * ATTENTE_A) ) ).
+fof(enregistrement_A_34, axiom, !( (ROUTE_A * NB_ATTENTE_A_34) -o (NB_ATTENTE_A_35 * ATTENTE_A) ) ).
+fof(enregistrement_A_35, axiom, !( (ROUTE_A * NB_ATTENTE_A_35) -o (NB_ATTENTE_A_36 * ATTENTE_A) ) ).
+fof(enregistrement_A_36, axiom, !( (ROUTE_A * NB_ATTENTE_A_36) -o (NB_ATTENTE_A_37 * ATTENTE_A) ) ).
+fof(enregistrement_A_37, axiom, !( (ROUTE_A * NB_ATTENTE_A_37) -o (NB_ATTENTE_A_38 * ATTENTE_A) ) ).
+fof(enregistrement_A_38, axiom, !( (ROUTE_A * NB_ATTENTE_A_38) -o (NB_ATTENTE_A_39 * ATTENTE_A) ) ).
+fof(enregistrement_A_39, axiom, !( (ROUTE_A * NB_ATTENTE_A_39) -o (NB_ATTENTE_A_40 * ATTENTE_A) ) ).
+fof(enregistrement_A_40, axiom, !( (ROUTE_A * NB_ATTENTE_A_40) -o (NB_ATTENTE_A_41 * ATTENTE_A) ) ).
+fof(enregistrement_A_41, axiom, !( (ROUTE_A * NB_ATTENTE_A_41) -o (NB_ATTENTE_A_42 * ATTENTE_A) ) ).
+fof(enregistrement_A_42, axiom, !( (ROUTE_A * NB_ATTENTE_A_42) -o (NB_ATTENTE_A_43 * ATTENTE_A) ) ).
+fof(enregistrement_A_43, axiom, !( (ROUTE_A * NB_ATTENTE_A_43) -o (NB_ATTENTE_A_44 * ATTENTE_A) ) ).
+fof(enregistrement_A_44, axiom, !( (ROUTE_A * NB_ATTENTE_A_44) -o (NB_ATTENTE_A_45 * ATTENTE_A) ) ).
+fof(enregistrement_A_45, axiom, !( (ROUTE_A * NB_ATTENTE_A_45) -o (NB_ATTENTE_A_46 * ATTENTE_A) ) ).
+fof(enregistrement_A_46, axiom, !( (ROUTE_A * NB_ATTENTE_A_46) -o (NB_ATTENTE_A_47 * ATTENTE_A) ) ).
+fof(enregistrement_A_47, axiom, !( (ROUTE_A * NB_ATTENTE_A_47) -o (NB_ATTENTE_A_48 * ATTENTE_A) ) ).
+fof(enregistrement_A_48, axiom, !( (ROUTE_A * NB_ATTENTE_A_48) -o (NB_ATTENTE_A_49 * ATTENTE_A) ) ).
+fof(enregistrement_A_49, axiom, !( (ROUTE_A * NB_ATTENTE_A_49) -o (NB_ATTENTE_A_50 * ATTENTE_A) ) ).
+fof(enregistrement_A_50, axiom, !( (ROUTE_A * NB_ATTENTE_A_50) -o (NB_ATTENTE_A_51 * ATTENTE_A) ) ).
+fof(enregistrement_A_51, axiom, !( (ROUTE_A * NB_ATTENTE_A_51) -o (NB_ATTENTE_A_52 * ATTENTE_A) ) ).
+fof(enregistrement_A_52, axiom, !( (ROUTE_A * NB_ATTENTE_A_52) -o (NB_ATTENTE_A_53 * ATTENTE_A) ) ).
+fof(enregistrement_A_53, axiom, !( (ROUTE_A * NB_ATTENTE_A_53) -o (NB_ATTENTE_A_54 * ATTENTE_A) ) ).
+fof(enregistrement_A_54, axiom, !( (ROUTE_A * NB_ATTENTE_A_54) -o (NB_ATTENTE_A_55 * ATTENTE_A) ) ).
+fof(enregistrement_A_55, axiom, !( (ROUTE_A * NB_ATTENTE_A_55) -o (NB_ATTENTE_A_56 * ATTENTE_A) ) ).
+fof(enregistrement_A_56, axiom, !( (ROUTE_A * NB_ATTENTE_A_56) -o (NB_ATTENTE_A_57 * ATTENTE_A) ) ).
+fof(enregistrement_A_57, axiom, !( (ROUTE_A * NB_ATTENTE_A_57) -o (NB_ATTENTE_A_58 * ATTENTE_A) ) ).
+fof(enregistrement_A_58, axiom, !( (ROUTE_A * NB_ATTENTE_A_58) -o (NB_ATTENTE_A_59 * ATTENTE_A) ) ).
+fof(enregistrement_A_59, axiom, !( (ROUTE_A * NB_ATTENTE_A_59) -o (NB_ATTENTE_A_60 * ATTENTE_A) ) ).
+fof(enregistrement_A_60, axiom, !( (ROUTE_A * NB_ATTENTE_A_60) -o (NB_ATTENTE_A_61 * ATTENTE_A) ) ).
+fof(enregistrement_A_61, axiom, !( (ROUTE_A * NB_ATTENTE_A_61) -o (NB_ATTENTE_A_62 * ATTENTE_A) ) ).
+fof(enregistrement_A_62, axiom, !( (ROUTE_A * NB_ATTENTE_A_62) -o (NB_ATTENTE_A_63 * ATTENTE_A) ) ).
+fof(enregistrement_A_63, axiom, !( (ROUTE_A * NB_ATTENTE_A_63) -o (NB_ATTENTE_A_64 * ATTENTE_A) ) ).
+fof(enregistrement_A_64, axiom, !( (ROUTE_A * NB_ATTENTE_A_64) -o (NB_ATTENTE_A_65 * ATTENTE_A) ) ).
+fof(enregistrement_A_65, axiom, !( (ROUTE_A * NB_ATTENTE_A_65) -o (NB_ATTENTE_A_66 * ATTENTE_A) ) ).
+fof(enregistrement_A_66, axiom, !( (ROUTE_A * NB_ATTENTE_A_66) -o (NB_ATTENTE_A_67 * ATTENTE_A) ) ).
+fof(enregistrement_A_67, axiom, !( (ROUTE_A * NB_ATTENTE_A_67) -o (NB_ATTENTE_A_68 * ATTENTE_A) ) ).
+fof(enregistrement_A_68, axiom, !( (ROUTE_A * NB_ATTENTE_A_68) -o (NB_ATTENTE_A_69 * ATTENTE_A) ) ).
+fof(enregistrement_A_69, axiom, !( (ROUTE_A * NB_ATTENTE_A_69) -o (NB_ATTENTE_A_70 * ATTENTE_A) ) ).
+fof(enregistrement_A_70, axiom, !( (ROUTE_A * NB_ATTENTE_A_70) -o (NB_ATTENTE_A_71 * ATTENTE_A) ) ).
+fof(enregistrement_A_71, axiom, !( (ROUTE_A * NB_ATTENTE_A_71) -o (NB_ATTENTE_A_72 * ATTENTE_A) ) ).
+fof(enregistrement_A_72, axiom, !( (ROUTE_A * NB_ATTENTE_A_72) -o (NB_ATTENTE_A_73 * ATTENTE_A) ) ).
+fof(enregistrement_A_73, axiom, !( (ROUTE_A * NB_ATTENTE_A_73) -o (NB_ATTENTE_A_74 * ATTENTE_A) ) ).
+fof(enregistrement_A_74, axiom, !( (ROUTE_A * NB_ATTENTE_A_74) -o (NB_ATTENTE_A_75 * ATTENTE_A) ) ).
+fof(enregistrement_A_75, axiom, !( (ROUTE_A * NB_ATTENTE_A_75) -o (NB_ATTENTE_A_76 * ATTENTE_A) ) ).
+fof(enregistrement_A_76, axiom, !( (ROUTE_A * NB_ATTENTE_A_76) -o (NB_ATTENTE_A_77 * ATTENTE_A) ) ).
+fof(enregistrement_A_77, axiom, !( (ROUTE_A * NB_ATTENTE_A_77) -o (NB_ATTENTE_A_78 * ATTENTE_A) ) ).
+fof(enregistrement_A_78, axiom, !( (ROUTE_A * NB_ATTENTE_A_78) -o (NB_ATTENTE_A_79 * ATTENTE_A) ) ).
+fof(enregistrement_A_79, axiom, !( (ROUTE_A * NB_ATTENTE_A_79) -o (NB_ATTENTE_A_80 * ATTENTE_A) ) ).
+fof(enregistrement_A_80, axiom, !( (ROUTE_A * NB_ATTENTE_A_80) -o (NB_ATTENTE_A_0 * ATTENTE_A) ) ).
+fof(liberation_A, axiom, !( (SUR_PONT_A) -o (SORTI_A * CAPACITE) ) ).
+fof(autorisation_B_2_1, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_1 * ATTENTE_B) -o (NB_ATTENTE_B_0 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_2, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_2 * ATTENTE_B) -o (NB_ATTENTE_B_1 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_3, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_3 * ATTENTE_B) -o (NB_ATTENTE_B_2 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_4, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_4 * ATTENTE_B) -o (NB_ATTENTE_B_3 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_5, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_5 * ATTENTE_B) -o (NB_ATTENTE_B_4 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_6, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_6 * ATTENTE_B) -o (NB_ATTENTE_B_5 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_7, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_7 * ATTENTE_B) -o (NB_ATTENTE_B_6 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_8, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_8 * ATTENTE_B) -o (NB_ATTENTE_B_7 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_9, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_9 * ATTENTE_B) -o (NB_ATTENTE_B_8 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_10, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_10 * ATTENTE_B) -o (NB_ATTENTE_B_9 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_11, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_11 * ATTENTE_B) -o (NB_ATTENTE_B_10 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_12, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_12 * ATTENTE_B) -o (NB_ATTENTE_B_11 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_13, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_13 * ATTENTE_B) -o (NB_ATTENTE_B_12 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_14, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_14 * ATTENTE_B) -o (NB_ATTENTE_B_13 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_15, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_15 * ATTENTE_B) -o (NB_ATTENTE_B_14 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_16, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_16 * ATTENTE_B) -o (NB_ATTENTE_B_15 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_17, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_17 * ATTENTE_B) -o (NB_ATTENTE_B_16 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_18, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_18 * ATTENTE_B) -o (NB_ATTENTE_B_17 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_19, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_19 * ATTENTE_B) -o (NB_ATTENTE_B_18 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_20, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_20 * ATTENTE_B) -o (NB_ATTENTE_B_19 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_21, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_21 * ATTENTE_B) -o (NB_ATTENTE_B_20 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_22, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_22 * ATTENTE_B) -o (NB_ATTENTE_B_21 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_23, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_23 * ATTENTE_B) -o (NB_ATTENTE_B_22 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_24, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_24 * ATTENTE_B) -o (NB_ATTENTE_B_23 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_25, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_25 * ATTENTE_B) -o (NB_ATTENTE_B_24 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_26, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_26 * ATTENTE_B) -o (NB_ATTENTE_B_25 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_27, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_27 * ATTENTE_B) -o (NB_ATTENTE_B_26 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_28, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_28 * ATTENTE_B) -o (NB_ATTENTE_B_27 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_29, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_29 * ATTENTE_B) -o (NB_ATTENTE_B_28 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_30, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_30 * ATTENTE_B) -o (NB_ATTENTE_B_29 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_31, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_31 * ATTENTE_B) -o (NB_ATTENTE_B_30 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_32, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_32 * ATTENTE_B) -o (NB_ATTENTE_B_31 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_33, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_33 * ATTENTE_B) -o (NB_ATTENTE_B_32 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_34, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_34 * ATTENTE_B) -o (NB_ATTENTE_B_33 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_35, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_35 * ATTENTE_B) -o (NB_ATTENTE_B_34 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_36, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_36 * ATTENTE_B) -o (NB_ATTENTE_B_35 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_37, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_37 * ATTENTE_B) -o (NB_ATTENTE_B_36 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_38, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_38 * ATTENTE_B) -o (NB_ATTENTE_B_37 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_39, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_39 * ATTENTE_B) -o (NB_ATTENTE_B_38 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_40, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_40 * ATTENTE_B) -o (NB_ATTENTE_B_39 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_41, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_41 * ATTENTE_B) -o (NB_ATTENTE_B_40 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_42, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_42 * ATTENTE_B) -o (NB_ATTENTE_B_41 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_43, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_43 * ATTENTE_B) -o (NB_ATTENTE_B_42 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_44, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_44 * ATTENTE_B) -o (NB_ATTENTE_B_43 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_45, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_45 * ATTENTE_B) -o (NB_ATTENTE_B_44 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_46, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_46 * ATTENTE_B) -o (NB_ATTENTE_B_45 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_47, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_47 * ATTENTE_B) -o (NB_ATTENTE_B_46 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_48, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_48 * ATTENTE_B) -o (NB_ATTENTE_B_47 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_49, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_49 * ATTENTE_B) -o (NB_ATTENTE_B_48 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_50, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_50 * ATTENTE_B) -o (NB_ATTENTE_B_49 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_51, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_51 * ATTENTE_B) -o (NB_ATTENTE_B_50 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_52, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_52 * ATTENTE_B) -o (NB_ATTENTE_B_51 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_53, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_53 * ATTENTE_B) -o (NB_ATTENTE_B_52 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_54, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_54 * ATTENTE_B) -o (NB_ATTENTE_B_53 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_55, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_55 * ATTENTE_B) -o (NB_ATTENTE_B_54 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_56, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_56 * ATTENTE_B) -o (NB_ATTENTE_B_55 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_57, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_57 * ATTENTE_B) -o (NB_ATTENTE_B_56 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_58, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_58 * ATTENTE_B) -o (NB_ATTENTE_B_57 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_59, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_59 * ATTENTE_B) -o (NB_ATTENTE_B_58 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_60, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_60 * ATTENTE_B) -o (NB_ATTENTE_B_59 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_61, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_61 * ATTENTE_B) -o (NB_ATTENTE_B_60 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_62, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_62 * ATTENTE_B) -o (NB_ATTENTE_B_61 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_63, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_63 * ATTENTE_B) -o (NB_ATTENTE_B_62 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_64, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_64 * ATTENTE_B) -o (NB_ATTENTE_B_63 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_65, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_65 * ATTENTE_B) -o (NB_ATTENTE_B_64 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_66, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_66 * ATTENTE_B) -o (NB_ATTENTE_B_65 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_67, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_67 * ATTENTE_B) -o (NB_ATTENTE_B_66 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_68, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_68 * ATTENTE_B) -o (NB_ATTENTE_B_67 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_69, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_69 * ATTENTE_B) -o (NB_ATTENTE_B_68 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_70, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_70 * ATTENTE_B) -o (NB_ATTENTE_B_69 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_71, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_71 * ATTENTE_B) -o (NB_ATTENTE_B_70 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_72, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_72 * ATTENTE_B) -o (NB_ATTENTE_B_71 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_73, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_73 * ATTENTE_B) -o (NB_ATTENTE_B_72 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_74, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_74 * ATTENTE_B) -o (NB_ATTENTE_B_73 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_75, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_75 * ATTENTE_B) -o (NB_ATTENTE_B_74 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_76, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_76 * ATTENTE_B) -o (NB_ATTENTE_B_75 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_77, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_77 * ATTENTE_B) -o (NB_ATTENTE_B_76 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_78, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_78 * ATTENTE_B) -o (NB_ATTENTE_B_77 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_79, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_79 * ATTENTE_B) -o (NB_ATTENTE_B_78 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(autorisation_B_2_80, axiom, !( (CAPACITE * CONTROLEUR_2 * NB_ATTENTE_B_80 * ATTENTE_B) -o (NB_ATTENTE_B_79 * CHOIX_2 * SUR_PONT_B) ) ).
+fof(basculement_1, axiom, !( (CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * VIDANGE_1) -o (CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CHOIX_1) ) ).
+fof(basculement_2, axiom, !( (CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * VIDANGE_2) -o (CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CHOIX_2) ) ).
+fof(liberation_B, axiom, !( (SUR_PONT_B) -o (CAPACITE * SORTI_B) ) ).
+fof(enregistrement_B_0, axiom, !( (NB_ATTENTE_B_0 * ROUTE_B) -o (NB_ATTENTE_B_1 * ATTENTE_B) ) ).
+fof(enregistrement_B_1, axiom, !( (NB_ATTENTE_B_1 * ROUTE_B) -o (NB_ATTENTE_B_2 * ATTENTE_B) ) ).
+fof(enregistrement_B_2, axiom, !( (NB_ATTENTE_B_2 * ROUTE_B) -o (NB_ATTENTE_B_3 * ATTENTE_B) ) ).
+fof(enregistrement_B_3, axiom, !( (NB_ATTENTE_B_3 * ROUTE_B) -o (NB_ATTENTE_B_4 * ATTENTE_B) ) ).
+fof(enregistrement_B_4, axiom, !( (NB_ATTENTE_B_4 * ROUTE_B) -o (NB_ATTENTE_B_5 * ATTENTE_B) ) ).
+fof(enregistrement_B_5, axiom, !( (NB_ATTENTE_B_5 * ROUTE_B) -o (NB_ATTENTE_B_6 * ATTENTE_B) ) ).
+fof(enregistrement_B_6, axiom, !( (NB_ATTENTE_B_6 * ROUTE_B) -o (NB_ATTENTE_B_7 * ATTENTE_B) ) ).
+fof(enregistrement_B_7, axiom, !( (NB_ATTENTE_B_7 * ROUTE_B) -o (NB_ATTENTE_B_8 * ATTENTE_B) ) ).
+fof(enregistrement_B_8, axiom, !( (NB_ATTENTE_B_8 * ROUTE_B) -o (NB_ATTENTE_B_9 * ATTENTE_B) ) ).
+fof(enregistrement_B_9, axiom, !( (NB_ATTENTE_B_9 * ROUTE_B) -o (NB_ATTENTE_B_10 * ATTENTE_B) ) ).
+fof(enregistrement_B_10, axiom, !( (NB_ATTENTE_B_10 * ROUTE_B) -o (NB_ATTENTE_B_11 * ATTENTE_B) ) ).
+fof(enregistrement_B_11, axiom, !( (NB_ATTENTE_B_11 * ROUTE_B) -o (NB_ATTENTE_B_12 * ATTENTE_B) ) ).
+fof(enregistrement_B_12, axiom, !( (NB_ATTENTE_B_12 * ROUTE_B) -o (NB_ATTENTE_B_13 * ATTENTE_B) ) ).
+fof(enregistrement_B_13, axiom, !( (NB_ATTENTE_B_13 * ROUTE_B) -o (NB_ATTENTE_B_14 * ATTENTE_B) ) ).
+fof(enregistrement_B_14, axiom, !( (NB_ATTENTE_B_14 * ROUTE_B) -o (NB_ATTENTE_B_15 * ATTENTE_B) ) ).
+fof(enregistrement_B_15, axiom, !( (NB_ATTENTE_B_15 * ROUTE_B) -o (NB_ATTENTE_B_16 * ATTENTE_B) ) ).
+fof(enregistrement_B_16, axiom, !( (NB_ATTENTE_B_16 * ROUTE_B) -o (NB_ATTENTE_B_17 * ATTENTE_B) ) ).
+fof(enregistrement_B_17, axiom, !( (NB_ATTENTE_B_17 * ROUTE_B) -o (NB_ATTENTE_B_18 * ATTENTE_B) ) ).
+fof(enregistrement_B_18, axiom, !( (NB_ATTENTE_B_18 * ROUTE_B) -o (NB_ATTENTE_B_19 * ATTENTE_B) ) ).
+fof(enregistrement_B_19, axiom, !( (NB_ATTENTE_B_19 * ROUTE_B) -o (NB_ATTENTE_B_20 * ATTENTE_B) ) ).
+fof(enregistrement_B_20, axiom, !( (NB_ATTENTE_B_20 * ROUTE_B) -o (NB_ATTENTE_B_21 * ATTENTE_B) ) ).
+fof(enregistrement_B_21, axiom, !( (NB_ATTENTE_B_21 * ROUTE_B) -o (NB_ATTENTE_B_22 * ATTENTE_B) ) ).
+fof(enregistrement_B_22, axiom, !( (NB_ATTENTE_B_22 * ROUTE_B) -o (NB_ATTENTE_B_23 * ATTENTE_B) ) ).
+fof(enregistrement_B_23, axiom, !( (NB_ATTENTE_B_23 * ROUTE_B) -o (NB_ATTENTE_B_24 * ATTENTE_B) ) ).
+fof(enregistrement_B_24, axiom, !( (NB_ATTENTE_B_24 * ROUTE_B) -o (NB_ATTENTE_B_25 * ATTENTE_B) ) ).
+fof(enregistrement_B_25, axiom, !( (NB_ATTENTE_B_25 * ROUTE_B) -o (NB_ATTENTE_B_26 * ATTENTE_B) ) ).
+fof(enregistrement_B_26, axiom, !( (NB_ATTENTE_B_26 * ROUTE_B) -o (NB_ATTENTE_B_27 * ATTENTE_B) ) ).
+fof(enregistrement_B_27, axiom, !( (NB_ATTENTE_B_27 * ROUTE_B) -o (NB_ATTENTE_B_28 * ATTENTE_B) ) ).
+fof(enregistrement_B_28, axiom, !( (NB_ATTENTE_B_28 * ROUTE_B) -o (NB_ATTENTE_B_29 * ATTENTE_B) ) ).
+fof(enregistrement_B_29, axiom, !( (NB_ATTENTE_B_29 * ROUTE_B) -o (NB_ATTENTE_B_30 * ATTENTE_B) ) ).
+fof(enregistrement_B_30, axiom, !( (NB_ATTENTE_B_30 * ROUTE_B) -o (NB_ATTENTE_B_31 * ATTENTE_B) ) ).
+fof(enregistrement_B_31, axiom, !( (NB_ATTENTE_B_31 * ROUTE_B) -o (NB_ATTENTE_B_32 * ATTENTE_B) ) ).
+fof(enregistrement_B_32, axiom, !( (NB_ATTENTE_B_32 * ROUTE_B) -o (NB_ATTENTE_B_33 * ATTENTE_B) ) ).
+fof(enregistrement_B_33, axiom, !( (NB_ATTENTE_B_33 * ROUTE_B) -o (NB_ATTENTE_B_34 * ATTENTE_B) ) ).
+fof(enregistrement_B_34, axiom, !( (NB_ATTENTE_B_34 * ROUTE_B) -o (NB_ATTENTE_B_35 * ATTENTE_B) ) ).
+fof(enregistrement_B_35, axiom, !( (NB_ATTENTE_B_35 * ROUTE_B) -o (NB_ATTENTE_B_36 * ATTENTE_B) ) ).
+fof(enregistrement_B_36, axiom, !( (NB_ATTENTE_B_36 * ROUTE_B) -o (NB_ATTENTE_B_37 * ATTENTE_B) ) ).
+fof(enregistrement_B_37, axiom, !( (NB_ATTENTE_B_37 * ROUTE_B) -o (NB_ATTENTE_B_38 * ATTENTE_B) ) ).
+fof(enregistrement_B_38, axiom, !( (NB_ATTENTE_B_38 * ROUTE_B) -o (NB_ATTENTE_B_39 * ATTENTE_B) ) ).
+fof(enregistrement_B_39, axiom, !( (NB_ATTENTE_B_39 * ROUTE_B) -o (NB_ATTENTE_B_40 * ATTENTE_B) ) ).
+fof(enregistrement_B_40, axiom, !( (NB_ATTENTE_B_40 * ROUTE_B) -o (NB_ATTENTE_B_41 * ATTENTE_B) ) ).
+fof(enregistrement_B_41, axiom, !( (NB_ATTENTE_B_41 * ROUTE_B) -o (NB_ATTENTE_B_42 * ATTENTE_B) ) ).
+fof(enregistrement_B_42, axiom, !( (NB_ATTENTE_B_42 * ROUTE_B) -o (NB_ATTENTE_B_43 * ATTENTE_B) ) ).
+fof(enregistrement_B_43, axiom, !( (NB_ATTENTE_B_43 * ROUTE_B) -o (NB_ATTENTE_B_44 * ATTENTE_B) ) ).
+fof(enregistrement_B_44, axiom, !( (NB_ATTENTE_B_44 * ROUTE_B) -o (NB_ATTENTE_B_45 * ATTENTE_B) ) ).
+fof(enregistrement_B_45, axiom, !( (NB_ATTENTE_B_45 * ROUTE_B) -o (NB_ATTENTE_B_46 * ATTENTE_B) ) ).
+fof(enregistrement_B_46, axiom, !( (NB_ATTENTE_B_46 * ROUTE_B) -o (NB_ATTENTE_B_47 * ATTENTE_B) ) ).
+fof(enregistrement_B_47, axiom, !( (NB_ATTENTE_B_47 * ROUTE_B) -o (NB_ATTENTE_B_48 * ATTENTE_B) ) ).
+fof(enregistrement_B_48, axiom, !( (NB_ATTENTE_B_48 * ROUTE_B) -o (NB_ATTENTE_B_49 * ATTENTE_B) ) ).
+fof(enregistrement_B_49, axiom, !( (NB_ATTENTE_B_49 * ROUTE_B) -o (NB_ATTENTE_B_50 * ATTENTE_B) ) ).
+fof(enregistrement_B_50, axiom, !( (NB_ATTENTE_B_50 * ROUTE_B) -o (NB_ATTENTE_B_51 * ATTENTE_B) ) ).
+fof(enregistrement_B_51, axiom, !( (NB_ATTENTE_B_51 * ROUTE_B) -o (NB_ATTENTE_B_52 * ATTENTE_B) ) ).
+fof(enregistrement_B_52, axiom, !( (NB_ATTENTE_B_52 * ROUTE_B) -o (NB_ATTENTE_B_53 * ATTENTE_B) ) ).
+fof(enregistrement_B_53, axiom, !( (NB_ATTENTE_B_53 * ROUTE_B) -o (NB_ATTENTE_B_54 * ATTENTE_B) ) ).
+fof(enregistrement_B_54, axiom, !( (NB_ATTENTE_B_54 * ROUTE_B) -o (NB_ATTENTE_B_55 * ATTENTE_B) ) ).
+fof(enregistrement_B_55, axiom, !( (NB_ATTENTE_B_55 * ROUTE_B) -o (NB_ATTENTE_B_56 * ATTENTE_B) ) ).
+fof(enregistrement_B_56, axiom, !( (NB_ATTENTE_B_56 * ROUTE_B) -o (NB_ATTENTE_B_57 * ATTENTE_B) ) ).
+fof(enregistrement_B_57, axiom, !( (NB_ATTENTE_B_57 * ROUTE_B) -o (NB_ATTENTE_B_58 * ATTENTE_B) ) ).
+fof(enregistrement_B_58, axiom, !( (NB_ATTENTE_B_58 * ROUTE_B) -o (NB_ATTENTE_B_59 * ATTENTE_B) ) ).
+fof(enregistrement_B_59, axiom, !( (NB_ATTENTE_B_59 * ROUTE_B) -o (NB_ATTENTE_B_60 * ATTENTE_B) ) ).
+fof(enregistrement_B_60, axiom, !( (NB_ATTENTE_B_60 * ROUTE_B) -o (NB_ATTENTE_B_61 * ATTENTE_B) ) ).
+fof(enregistrement_B_61, axiom, !( (NB_ATTENTE_B_61 * ROUTE_B) -o (NB_ATTENTE_B_62 * ATTENTE_B) ) ).
+fof(enregistrement_B_62, axiom, !( (NB_ATTENTE_B_62 * ROUTE_B) -o (NB_ATTENTE_B_63 * ATTENTE_B) ) ).
+fof(enregistrement_B_63, axiom, !( (NB_ATTENTE_B_63 * ROUTE_B) -o (NB_ATTENTE_B_64 * ATTENTE_B) ) ).
+fof(enregistrement_B_64, axiom, !( (NB_ATTENTE_B_64 * ROUTE_B) -o (NB_ATTENTE_B_65 * ATTENTE_B) ) ).
+fof(enregistrement_B_65, axiom, !( (NB_ATTENTE_B_65 * ROUTE_B) -o (NB_ATTENTE_B_66 * ATTENTE_B) ) ).
+fof(enregistrement_B_66, axiom, !( (NB_ATTENTE_B_66 * ROUTE_B) -o (NB_ATTENTE_B_67 * ATTENTE_B) ) ).
+fof(enregistrement_B_67, axiom, !( (NB_ATTENTE_B_67 * ROUTE_B) -o (NB_ATTENTE_B_68 * ATTENTE_B) ) ).
+fof(enregistrement_B_68, axiom, !( (NB_ATTENTE_B_68 * ROUTE_B) -o (NB_ATTENTE_B_69 * ATTENTE_B) ) ).
+fof(enregistrement_B_69, axiom, !( (NB_ATTENTE_B_69 * ROUTE_B) -o (NB_ATTENTE_B_70 * ATTENTE_B) ) ).
+fof(enregistrement_B_70, axiom, !( (NB_ATTENTE_B_70 * ROUTE_B) -o (NB_ATTENTE_B_71 * ATTENTE_B) ) ).
+fof(enregistrement_B_71, axiom, !( (NB_ATTENTE_B_71 * ROUTE_B) -o (NB_ATTENTE_B_72 * ATTENTE_B) ) ).
+fof(enregistrement_B_72, axiom, !( (NB_ATTENTE_B_72 * ROUTE_B) -o (NB_ATTENTE_B_73 * ATTENTE_B) ) ).
+fof(enregistrement_B_73, axiom, !( (NB_ATTENTE_B_73 * ROUTE_B) -o (NB_ATTENTE_B_74 * ATTENTE_B) ) ).
+fof(enregistrement_B_74, axiom, !( (NB_ATTENTE_B_74 * ROUTE_B) -o (NB_ATTENTE_B_75 * ATTENTE_B) ) ).
+fof(enregistrement_B_75, axiom, !( (NB_ATTENTE_B_75 * ROUTE_B) -o (NB_ATTENTE_B_76 * ATTENTE_B) ) ).
+fof(enregistrement_B_76, axiom, !( (NB_ATTENTE_B_76 * ROUTE_B) -o (NB_ATTENTE_B_77 * ATTENTE_B) ) ).
+fof(enregistrement_B_77, axiom, !( (NB_ATTENTE_B_77 * ROUTE_B) -o (NB_ATTENTE_B_78 * ATTENTE_B) ) ).
+fof(enregistrement_B_78, axiom, !( (NB_ATTENTE_B_78 * ROUTE_B) -o (NB_ATTENTE_B_79 * ATTENTE_B) ) ).
+fof(enregistrement_B_79, axiom, !( (NB_ATTENTE_B_79 * ROUTE_B) -o (NB_ATTENTE_B_80 * ATTENTE_B) ) ).
+fof(enregistrement_B_80, axiom, !( (NB_ATTENTE_B_80 * ROUTE_B) -o (NB_ATTENTE_B_0 * ATTENTE_B) ) ).
+fof(decision_0_1, axiom, !( (CHOIX_1 * COMPTEUR_0) -o (CONTROLEUR_1 * COMPTEUR_1) ) ).
+fof(decision_1_1, axiom, !( (CHOIX_1 * COMPTEUR_1) -o (CONTROLEUR_1 * COMPTEUR_2) ) ).
+fof(decision_2_1, axiom, !( (CHOIX_1 * COMPTEUR_2) -o (CONTROLEUR_1 * COMPTEUR_3) ) ).
+fof(decision_3_1, axiom, !( (CHOIX_1 * COMPTEUR_3) -o (CONTROLEUR_1 * COMPTEUR_4) ) ).
+fof(decision_4_1, axiom, !( (CHOIX_1 * COMPTEUR_4) -o (CONTROLEUR_1 * COMPTEUR_5) ) ).
+fof(decision_5_1, axiom, !( (CHOIX_1 * COMPTEUR_5) -o (CONTROLEUR_1 * COMPTEUR_6) ) ).
+fof(decision_6_1, axiom, !( (CHOIX_1 * COMPTEUR_6) -o (CONTROLEUR_1 * COMPTEUR_7) ) ).
+fof(decision_7_1, axiom, !( (CHOIX_1 * COMPTEUR_7) -o (CONTROLEUR_1 * COMPTEUR_8) ) ).
+fof(decision_8_1, axiom, !( (CHOIX_1 * COMPTEUR_8) -o (CONTROLEUR_1 * COMPTEUR_9) ) ).
+fof(decision_9_1, axiom, !( (CHOIX_1 * COMPTEUR_9) -o (CONTROLEUR_1 * COMPTEUR_10) ) ).
+fof(decision_0_2, axiom, !( (CHOIX_2 * COMPTEUR_0) -o (CONTROLEUR_2 * COMPTEUR_1) ) ).
+fof(decision_1_2, axiom, !( (CHOIX_2 * COMPTEUR_1) -o (CONTROLEUR_2 * COMPTEUR_2) ) ).
+fof(decision_2_2, axiom, !( (CHOIX_2 * COMPTEUR_2) -o (CONTROLEUR_2 * COMPTEUR_3) ) ).
+fof(decision_3_2, axiom, !( (CHOIX_2 * COMPTEUR_3) -o (CONTROLEUR_2 * COMPTEUR_4) ) ).
+fof(decision_4_2, axiom, !( (CHOIX_2 * COMPTEUR_4) -o (CONTROLEUR_2 * COMPTEUR_5) ) ).
+fof(decision_5_2, axiom, !( (CHOIX_2 * COMPTEUR_5) -o (CONTROLEUR_2 * COMPTEUR_6) ) ).
+fof(decision_6_2, axiom, !( (CHOIX_2 * COMPTEUR_6) -o (CONTROLEUR_2 * COMPTEUR_7) ) ).
+fof(decision_7_2, axiom, !( (CHOIX_2 * COMPTEUR_7) -o (CONTROLEUR_2 * COMPTEUR_8) ) ).
+fof(decision_8_2, axiom, !( (CHOIX_2 * COMPTEUR_8) -o (CONTROLEUR_2 * COMPTEUR_9) ) ).
+fof(decision_9_2, axiom, !( (CHOIX_2 * COMPTEUR_9) -o (CONTROLEUR_2 * COMPTEUR_10) ) ).
+fof(altern_cpt_10_1, axiom, !( (CHOIX_1 * COMPTEUR_10) -o (VIDANGE_2 * COMPTEUR_0) ) ).
+fof(altern_cpt_10_2, axiom, !( (CHOIX_2 * COMPTEUR_10) -o (VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_1, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_1 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_1 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_2, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_2 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_2 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_3, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_3 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_3 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_4, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_4 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_4 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_5, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_5 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_5 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_6, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_6 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_6 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_7, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_7 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_7 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_8, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_8 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_8 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_9, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_9 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_9 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_10, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_10 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_10 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_11, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_11 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_11 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_12, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_12 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_12 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_13, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_13 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_13 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_14, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_14 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_14 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_15, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_15 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_15 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_16, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_16 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_16 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_17, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_17 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_17 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_18, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_18 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_18 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_19, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_19 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_19 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_20, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_20 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_20 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_21, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_21 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_21 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_22, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_22 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_22 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_23, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_23 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_23 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_24, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_24 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_24 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_25, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_25 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_25 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_26, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_26 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_26 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_27, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_27 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_27 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_28, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_28 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_28 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_29, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_29 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_29 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_30, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_30 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_30 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_31, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_31 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_31 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_32, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_32 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_32 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_33, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_33 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_33 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_34, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_34 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_34 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_35, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_35 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_35 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_36, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_36 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_36 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_37, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_37 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_37 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_38, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_38 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_38 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_39, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_39 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_39 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_40, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_40 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_40 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_41, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_41 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_41 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_42, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_42 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_42 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_43, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_43 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_43 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_44, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_44 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_44 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_45, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_45 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_45 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_46, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_46 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_46 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_47, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_47 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_47 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_48, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_48 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_48 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_49, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_49 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_49 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_50, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_50 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_50 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_51, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_51 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_51 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_52, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_52 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_52 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_53, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_53 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_53 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_54, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_54 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_54 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_55, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_55 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_55 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_56, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_56 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_56 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_57, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_57 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_57 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_58, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_58 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_58 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_59, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_59 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_59 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_60, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_60 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_60 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_61, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_61 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_61 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_62, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_62 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_62 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_63, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_63 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_63 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_64, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_64 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_64 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_65, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_65 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_65 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_66, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_66 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_66 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_67, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_67 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_67 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_68, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_68 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_68 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_69, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_69 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_69 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_70, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_70 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_70 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_71, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_71 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_71 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_72, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_72 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_72 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_73, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_73 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_73 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_74, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_74 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_74 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_75, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_75 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_75 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_76, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_76 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_76 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_77, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_77 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_77 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_78, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_78 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_78 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_79, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_79 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_79 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_0_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_0) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_1_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_1) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_2_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_2) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_3_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_3) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_4_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_4) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_5_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_5) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_6_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_6) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_7_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_7) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_8_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_8) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_9_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_9) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_A_10_1_0_80, axiom, !( (NB_ATTENTE_A_0 * CONTROLEUR_1 * NB_ATTENTE_B_80 * COMPTEUR_10) -o (NB_ATTENTE_A_0 * NB_ATTENTE_B_80 * VIDANGE_2 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_1_0, axiom, !( (NB_ATTENTE_A_1 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_1 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_2_0, axiom, !( (NB_ATTENTE_A_2 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_2 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_3_0, axiom, !( (NB_ATTENTE_A_3 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_3 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_4_0, axiom, !( (NB_ATTENTE_A_4 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_4 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_5_0, axiom, !( (NB_ATTENTE_A_5 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_5 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_6_0, axiom, !( (NB_ATTENTE_A_6 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_6 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_7_0, axiom, !( (NB_ATTENTE_A_7 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_7 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_8_0, axiom, !( (NB_ATTENTE_A_8 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_8 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_9_0, axiom, !( (NB_ATTENTE_A_9 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_9 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_10_0, axiom, !( (NB_ATTENTE_A_10 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_10 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_11_0, axiom, !( (NB_ATTENTE_A_11 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_11 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_12_0, axiom, !( (NB_ATTENTE_A_12 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_12 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_13_0, axiom, !( (NB_ATTENTE_A_13 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_13 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_14_0, axiom, !( (NB_ATTENTE_A_14 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_14 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_15_0, axiom, !( (NB_ATTENTE_A_15 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_15 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_16_0, axiom, !( (NB_ATTENTE_A_16 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_16 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_17_0, axiom, !( (NB_ATTENTE_A_17 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_17 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_18_0, axiom, !( (NB_ATTENTE_A_18 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_18 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_19_0, axiom, !( (NB_ATTENTE_A_19 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_19 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_20_0, axiom, !( (NB_ATTENTE_A_20 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_20 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_21_0, axiom, !( (NB_ATTENTE_A_21 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_21 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_22_0, axiom, !( (NB_ATTENTE_A_22 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_22 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_23_0, axiom, !( (NB_ATTENTE_A_23 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_23 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_24_0, axiom, !( (NB_ATTENTE_A_24 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_24 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_25_0, axiom, !( (NB_ATTENTE_A_25 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_25 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_26_0, axiom, !( (NB_ATTENTE_A_26 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_26 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_27_0, axiom, !( (NB_ATTENTE_A_27 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_27 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_28_0, axiom, !( (NB_ATTENTE_A_28 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_28 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_29_0, axiom, !( (NB_ATTENTE_A_29 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_29 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_30_0, axiom, !( (NB_ATTENTE_A_30 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_30 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_31_0, axiom, !( (NB_ATTENTE_A_31 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_31 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_32_0, axiom, !( (NB_ATTENTE_A_32 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_32 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_33_0, axiom, !( (NB_ATTENTE_A_33 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_33 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_34_0, axiom, !( (NB_ATTENTE_A_34 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_34 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_35_0, axiom, !( (NB_ATTENTE_A_35 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_35 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_36_0, axiom, !( (NB_ATTENTE_A_36 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_36 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_37_0, axiom, !( (NB_ATTENTE_A_37 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_37 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_38_0, axiom, !( (NB_ATTENTE_A_38 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_38 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_39_0, axiom, !( (NB_ATTENTE_A_39 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_39 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_40_0, axiom, !( (NB_ATTENTE_A_40 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_40 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_41_0, axiom, !( (NB_ATTENTE_A_41 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_41 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_42_0, axiom, !( (NB_ATTENTE_A_42 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_42 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_43_0, axiom, !( (NB_ATTENTE_A_43 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_43 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_44_0, axiom, !( (NB_ATTENTE_A_44 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_44 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_45_0, axiom, !( (NB_ATTENTE_A_45 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_45 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_46_0, axiom, !( (NB_ATTENTE_A_46 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_46 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_47_0, axiom, !( (NB_ATTENTE_A_47 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_47 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_48_0, axiom, !( (NB_ATTENTE_A_48 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_48 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_49_0, axiom, !( (NB_ATTENTE_A_49 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_49 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_50_0, axiom, !( (NB_ATTENTE_A_50 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_50 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_51_0, axiom, !( (NB_ATTENTE_A_51 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_51 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_52_0, axiom, !( (NB_ATTENTE_A_52 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_52 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_53_0, axiom, !( (NB_ATTENTE_A_53 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_53 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_54_0, axiom, !( (NB_ATTENTE_A_54 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_54 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_55_0, axiom, !( (NB_ATTENTE_A_55 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_55 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_56_0, axiom, !( (NB_ATTENTE_A_56 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_56 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_57_0, axiom, !( (NB_ATTENTE_A_57 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_57 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_58_0, axiom, !( (NB_ATTENTE_A_58 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_58 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_59_0, axiom, !( (NB_ATTENTE_A_59 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_59 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_60_0, axiom, !( (NB_ATTENTE_A_60 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_60 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_61_0, axiom, !( (NB_ATTENTE_A_61 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_61 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_62_0, axiom, !( (NB_ATTENTE_A_62 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_62 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_63_0, axiom, !( (NB_ATTENTE_A_63 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_63 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_64_0, axiom, !( (NB_ATTENTE_A_64 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_64 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_65_0, axiom, !( (NB_ATTENTE_A_65 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_65 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_66_0, axiom, !( (NB_ATTENTE_A_66 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_66 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_67_0, axiom, !( (NB_ATTENTE_A_67 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_67 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_68_0, axiom, !( (NB_ATTENTE_A_68 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_68 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_69_0, axiom, !( (NB_ATTENTE_A_69 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_69 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_70_0, axiom, !( (NB_ATTENTE_A_70 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_70 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_71_0, axiom, !( (NB_ATTENTE_A_71 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_71 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_72_0, axiom, !( (NB_ATTENTE_A_72 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_72 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_73_0, axiom, !( (NB_ATTENTE_A_73 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_73 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_74_0, axiom, !( (NB_ATTENTE_A_74 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_74 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_75_0, axiom, !( (NB_ATTENTE_A_75 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_75 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_76_0, axiom, !( (NB_ATTENTE_A_76 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_76 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_77_0, axiom, !( (NB_ATTENTE_A_77 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_77 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_78_0, axiom, !( (NB_ATTENTE_A_78 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_78 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_79_0, axiom, !( (NB_ATTENTE_A_79 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_79 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_0_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_0) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_1_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_1) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_2_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_2) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_3_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_3) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_4_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_4) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_5_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_5) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_6_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_6) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_7_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_7) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_8_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_8) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_9_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_9) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(timeout_B_10_2_80_0, axiom, !( (NB_ATTENTE_A_80 * CONTROLEUR_2 * NB_ATTENTE_B_0 * COMPTEUR_10) -o (NB_ATTENTE_A_80 * NB_ATTENTE_B_0 * VIDANGE_1 * COMPTEUR_0) ) ).
+fof(autorisation_A_1_1, axiom, !( (NB_ATTENTE_A_1 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_0 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_2, axiom, !( (NB_ATTENTE_A_2 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_1 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_3, axiom, !( (NB_ATTENTE_A_3 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_2 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_4, axiom, !( (NB_ATTENTE_A_4 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_3 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_5, axiom, !( (NB_ATTENTE_A_5 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_4 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_6, axiom, !( (NB_ATTENTE_A_6 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_5 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_7, axiom, !( (NB_ATTENTE_A_7 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_6 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_8, axiom, !( (NB_ATTENTE_A_8 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_7 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_9, axiom, !( (NB_ATTENTE_A_9 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_8 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_10, axiom, !( (NB_ATTENTE_A_10 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_9 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_11, axiom, !( (NB_ATTENTE_A_11 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_10 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_12, axiom, !( (NB_ATTENTE_A_12 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_11 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_13, axiom, !( (NB_ATTENTE_A_13 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_12 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_14, axiom, !( (NB_ATTENTE_A_14 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_13 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_15, axiom, !( (NB_ATTENTE_A_15 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_14 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_16, axiom, !( (NB_ATTENTE_A_16 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_15 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_17, axiom, !( (NB_ATTENTE_A_17 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_16 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_18, axiom, !( (NB_ATTENTE_A_18 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_17 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_19, axiom, !( (NB_ATTENTE_A_19 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_18 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_20, axiom, !( (NB_ATTENTE_A_20 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_19 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_21, axiom, !( (NB_ATTENTE_A_21 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_20 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_22, axiom, !( (NB_ATTENTE_A_22 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_21 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_23, axiom, !( (NB_ATTENTE_A_23 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_22 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_24, axiom, !( (NB_ATTENTE_A_24 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_23 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_25, axiom, !( (NB_ATTENTE_A_25 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_24 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_26, axiom, !( (NB_ATTENTE_A_26 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_25 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_27, axiom, !( (NB_ATTENTE_A_27 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_26 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_28, axiom, !( (NB_ATTENTE_A_28 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_27 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_29, axiom, !( (NB_ATTENTE_A_29 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_28 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_30, axiom, !( (NB_ATTENTE_A_30 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_29 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_31, axiom, !( (NB_ATTENTE_A_31 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_30 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_32, axiom, !( (NB_ATTENTE_A_32 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_31 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_33, axiom, !( (NB_ATTENTE_A_33 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_32 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_34, axiom, !( (NB_ATTENTE_A_34 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_33 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_35, axiom, !( (NB_ATTENTE_A_35 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_34 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_36, axiom, !( (NB_ATTENTE_A_36 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_35 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_37, axiom, !( (NB_ATTENTE_A_37 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_36 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_38, axiom, !( (NB_ATTENTE_A_38 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_37 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_39, axiom, !( (NB_ATTENTE_A_39 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_38 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_40, axiom, !( (NB_ATTENTE_A_40 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_39 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_41, axiom, !( (NB_ATTENTE_A_41 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_40 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_42, axiom, !( (NB_ATTENTE_A_42 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_41 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_43, axiom, !( (NB_ATTENTE_A_43 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_42 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_44, axiom, !( (NB_ATTENTE_A_44 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_43 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_45, axiom, !( (NB_ATTENTE_A_45 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_44 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_46, axiom, !( (NB_ATTENTE_A_46 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_45 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_47, axiom, !( (NB_ATTENTE_A_47 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_46 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_48, axiom, !( (NB_ATTENTE_A_48 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_47 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_49, axiom, !( (NB_ATTENTE_A_49 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_48 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_50, axiom, !( (NB_ATTENTE_A_50 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_49 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_51, axiom, !( (NB_ATTENTE_A_51 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_50 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_52, axiom, !( (NB_ATTENTE_A_52 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_51 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_53, axiom, !( (NB_ATTENTE_A_53 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_52 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_54, axiom, !( (NB_ATTENTE_A_54 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_53 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_55, axiom, !( (NB_ATTENTE_A_55 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_54 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_56, axiom, !( (NB_ATTENTE_A_56 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_55 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_57, axiom, !( (NB_ATTENTE_A_57 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_56 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_58, axiom, !( (NB_ATTENTE_A_58 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_57 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_59, axiom, !( (NB_ATTENTE_A_59 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_58 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_60, axiom, !( (NB_ATTENTE_A_60 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_59 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_61, axiom, !( (NB_ATTENTE_A_61 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_60 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_62, axiom, !( (NB_ATTENTE_A_62 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_61 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_63, axiom, !( (NB_ATTENTE_A_63 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_62 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_64, axiom, !( (NB_ATTENTE_A_64 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_63 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_65, axiom, !( (NB_ATTENTE_A_65 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_64 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_66, axiom, !( (NB_ATTENTE_A_66 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_65 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_67, axiom, !( (NB_ATTENTE_A_67 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_66 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_68, axiom, !( (NB_ATTENTE_A_68 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_67 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_69, axiom, !( (NB_ATTENTE_A_69 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_68 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_70, axiom, !( (NB_ATTENTE_A_70 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_69 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_71, axiom, !( (NB_ATTENTE_A_71 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_70 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_72, axiom, !( (NB_ATTENTE_A_72 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_71 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_73, axiom, !( (NB_ATTENTE_A_73 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_72 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_74, axiom, !( (NB_ATTENTE_A_74 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_73 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_75, axiom, !( (NB_ATTENTE_A_75 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_74 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_76, axiom, !( (NB_ATTENTE_A_76 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_75 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_77, axiom, !( (NB_ATTENTE_A_77 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_76 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_78, axiom, !( (NB_ATTENTE_A_78 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_77 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_79, axiom, !( (NB_ATTENTE_A_79 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_78 * SUR_PONT_A * CHOIX_1) ) ).
+fof(autorisation_A_1_80, axiom, !( (NB_ATTENTE_A_80 * ATTENTE_A * CAPACITE * CONTROLEUR_1) -o (NB_ATTENTE_A_79 * SUR_PONT_A * CHOIX_1) ) ).
+fof(con1, conjecture, ATTENTE_A * ATTENTE_A * ATTENTE_A * ATTENTE_A * ATTENTE_A * ATTENTE_A * ATTENTE_A * ATTENTE_A * ATTENTE_A * ATTENTE_A * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * ATTENTE_B * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * CAPACITE * COMPTEUR_2 * CONTROLEUR_1 * NB_ATTENTE_A_10 * NB_ATTENTE_B_36 * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_A * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * ROUTE_B * SUR_PONT_A).

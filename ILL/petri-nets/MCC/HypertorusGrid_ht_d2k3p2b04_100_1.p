@@ -1,0 +1,159 @@
+
+%--------------------------------------------------------------------------
+% File     : 
+% Domain   : Petri-nets
+% Problem  : HypertorusGrid 
+% Version  : 1.0
+% Refs     : The Model Checking Contest
+% Source   : https://pnrepository.lip6.fr/mcc/models/all/browser.html
+%
+% Status (linear) : Theorem
+% Rating (linear) : 0.00 v1.0.0
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+fof(inital_state, axiom, pb_d1_n1_1_1 * pb_d1_n1_1_1 * pb_d1_n1_1_2 * pb_d1_n1_1_2 * pb_d1_n1_1_3 * pb_d1_n1_1_3 * pb_d1_n1_2_1 * pb_d1_n1_2_1 * pb_d1_n1_2_2 * pb_d1_n1_2_2 * pb_d1_n1_2_3 * pb_d1_n1_2_3 * pb_d1_n1_3_1 * pb_d1_n1_3_1 * pb_d1_n1_3_2 * pb_d1_n1_3_2 * pb_d1_n1_3_3 * pb_d1_n1_3_3 * pb_d1_n2_1_1 * pb_d1_n2_1_1 * pb_d1_n2_1_2 * pb_d1_n2_1_2 * pb_d1_n2_1_3 * pb_d1_n2_1_3 * pb_d1_n2_2_1 * pb_d1_n2_2_1 * pb_d1_n2_2_2 * pb_d1_n2_2_2 * pb_d1_n2_2_3 * pb_d1_n2_2_3 * pb_d1_n2_3_1 * pb_d1_n2_3_1 * pb_d1_n2_3_2 * pb_d1_n2_3_2 * pb_d1_n2_3_3 * pb_d1_n2_3_3 * pb_d2_n1_1_1 * pb_d2_n1_1_1 * pb_d2_n1_1_2 * pb_d2_n1_1_2 * pb_d2_n1_1_3 * pb_d2_n1_1_3 * pb_d2_n1_2_1 * pb_d2_n1_2_1 * pb_d2_n1_2_2 * pb_d2_n1_2_2 * pb_d2_n1_2_3 * pb_d2_n1_2_3 * pb_d2_n1_3_1 * pb_d2_n1_3_1 * pb_d2_n1_3_2 * pb_d2_n1_3_2 * pb_d2_n1_3_3 * pb_d2_n1_3_3 * pb_d2_n2_1_1 * pb_d2_n2_1_1 * pb_d2_n2_1_2 * pb_d2_n2_1_2 * pb_d2_n2_1_3 * pb_d2_n2_1_3 * pb_d2_n2_2_1 * pb_d2_n2_2_1 * pb_d2_n2_2_2 * pb_d2_n2_2_2 * pb_d2_n2_2_3 * pb_d2_n2_2_3 * pb_d2_n2_3_1 * pb_d2_n2_3_1 * pb_d2_n2_3_2 * pb_d2_n2_3_2 * pb_d2_n2_3_3 * pb_d2_n2_3_3 * pbl_1_1 * pbl_1_1 * pbl_1_1 * pbl_1_1 * pbl_1_2 * pbl_1_2 * pbl_1_2 * pbl_1_2 * pbl_1_3 * pbl_1_3 * pbl_1_3 * pbl_1_3 * pbl_2_1 * pbl_2_1 * pbl_2_1 * pbl_2_1 * pbl_2_2 * pbl_2_2 * pbl_2_2 * pbl_2_2 * pbl_2_3 * pbl_2_3 * pbl_2_3 * pbl_2_3 * pbl_3_1 * pbl_3_1 * pbl_3_1 * pbl_3_1 * pbl_3_2 * pbl_3_2 * pbl_3_2 * pbl_3_2 * pbl_3_3 * pbl_3_3 * pbl_3_3 * pbl_3_3 * pil_d1_n1_1_1 * pil_d1_n1_1_2 * pil_d1_n1_1_3 * pil_d1_n1_2_1 * pil_d1_n1_2_2 * pil_d1_n1_2_3 * pil_d1_n1_3_1 * pil_d1_n1_3_2 * pil_d1_n1_3_3 * pil_d2_n1_1_1 * pil_d2_n1_1_2 * pil_d2_n1_1_3 * pil_d2_n1_2_1 * pil_d2_n1_2_2 * pil_d2_n1_2_3 * pil_d2_n1_3_1 * pil_d2_n1_3_2 * pil_d2_n1_3_3 * pol_d1_n1_1_1 * pol_d1_n1_1_2 * pol_d1_n1_1_3 * pol_d1_n1_2_1 * pol_d1_n1_2_2 * pol_d1_n1_2_3 * pol_d1_n1_3_1 * pol_d1_n1_3_2 * pol_d1_n1_3_3 * pol_d2_n1_1_1 * pol_d2_n1_1_2 * pol_d2_n1_1_3 * pol_d2_n1_2_1 * pol_d2_n1_2_2 * pol_d2_n1_2_3 * pol_d2_n1_3_1 * pol_d2_n1_3_2 * pol_d2_n1_3_3).
+fof(ti_d1_n1_d1_n2_1_1, axiom, !( (pi_d1_n1_1_1 * pbl_1_1) -o (pil_d1_n1_1_1 * pb_d1_n2_1_1) ) ).
+fof(ti_d1_n1_d1_n2_1_2, axiom, !( (pi_d1_n1_1_2 * pbl_1_2) -o (pil_d1_n1_1_2 * pb_d1_n2_1_2) ) ).
+fof(ti_d1_n1_d1_n2_1_3, axiom, !( (pbl_1_3 * pi_d1_n1_1_3) -o (pil_d1_n1_1_3 * pb_d1_n2_1_3) ) ).
+fof(ti_d1_n1_d1_n2_2_1, axiom, !( (pi_d1_n1_2_1 * pbl_2_1) -o (pil_d1_n1_2_1 * pb_d1_n2_2_1) ) ).
+fof(ti_d1_n1_d1_n2_2_2, axiom, !( (pi_d1_n1_2_2 * pbl_2_2) -o (pil_d1_n1_2_2 * pb_d1_n2_2_2) ) ).
+fof(ti_d1_n1_d1_n2_2_3, axiom, !( (pi_d1_n1_2_3 * pbl_2_3) -o (pil_d1_n1_2_3 * pb_d1_n2_2_3) ) ).
+fof(ti_d1_n1_d1_n2_3_1, axiom, !( (pi_d1_n1_3_1 * pbl_3_1) -o (pil_d1_n1_3_1 * pb_d1_n2_3_1) ) ).
+fof(ti_d1_n1_d1_n2_3_2, axiom, !( (pi_d1_n1_3_2 * pbl_3_2) -o (pil_d1_n1_3_2 * pb_d1_n2_3_2) ) ).
+fof(ti_d1_n1_d1_n2_3_3, axiom, !( (pi_d1_n1_3_3 * pbl_3_3) -o (pil_d1_n1_3_3 * pb_d1_n2_3_3) ) ).
+fof(ti_d1_n1_d2_n1_1_1, axiom, !( (pi_d1_n1_1_1 * pbl_1_1) -o (pil_d1_n1_1_1 * pb_d2_n1_1_1) ) ).
+fof(ti_d1_n1_d2_n1_1_2, axiom, !( (pi_d1_n1_1_2 * pbl_1_2) -o (pil_d1_n1_1_2 * pb_d2_n1_1_2) ) ).
+fof(ti_d1_n1_d2_n1_1_3, axiom, !( (pi_d1_n1_1_3 * pbl_1_3) -o (pil_d1_n1_1_3 * pb_d2_n1_1_3) ) ).
+fof(ti_d1_n1_d2_n1_2_1, axiom, !( (pi_d1_n1_2_1 * pbl_2_1) -o (pil_d1_n1_2_1 * pb_d2_n1_2_1) ) ).
+fof(ti_d1_n1_d2_n1_2_2, axiom, !( (pi_d1_n1_2_2 * pbl_2_2) -o (pil_d1_n1_2_2 * pb_d2_n1_2_2) ) ).
+fof(ti_d1_n1_d2_n1_2_3, axiom, !( (pi_d1_n1_2_3 * pbl_2_3) -o (pil_d1_n1_2_3 * pb_d2_n1_2_3) ) ).
+fof(ti_d1_n1_d2_n1_3_1, axiom, !( (pi_d1_n1_3_1 * pbl_3_1) -o (pil_d1_n1_3_1 * pb_d2_n1_3_1) ) ).
+fof(ti_d1_n1_d2_n1_3_2, axiom, !( (pi_d1_n1_3_2 * pbl_3_2) -o (pil_d1_n1_3_2 * pb_d2_n1_3_2) ) ).
+fof(ti_d1_n1_d2_n1_3_3, axiom, !( (pi_d1_n1_3_3 * pbl_3_3) -o (pil_d1_n1_3_3 * pb_d2_n1_3_3) ) ).
+fof(ti_d1_n1_d2_n2_1_1, axiom, !( (pi_d1_n1_1_1 * pbl_1_1) -o (pil_d1_n1_1_1 * pb_d2_n2_1_1) ) ).
+fof(ti_d1_n1_d2_n2_1_2, axiom, !( (pi_d1_n1_1_2 * pbl_1_2) -o (pil_d1_n1_1_2 * pb_d2_n2_1_2) ) ).
+fof(ti_d1_n1_d2_n2_1_3, axiom, !( (pi_d1_n1_1_3 * pbl_1_3) -o (pil_d1_n1_1_3 * pb_d2_n2_1_3) ) ).
+fof(ti_d1_n1_d2_n2_2_1, axiom, !( (pi_d1_n1_2_1 * pbl_2_1) -o (pil_d1_n1_2_1 * pb_d2_n2_2_1) ) ).
+fof(ti_d1_n1_d2_n2_2_2, axiom, !( (pi_d1_n1_2_2 * pbl_2_2) -o (pil_d1_n1_2_2 * pb_d2_n2_2_2) ) ).
+fof(ti_d1_n1_d2_n2_2_3, axiom, !( (pi_d1_n1_2_3 * pbl_2_3) -o (pil_d1_n1_2_3 * pb_d2_n2_2_3) ) ).
+fof(ti_d1_n1_d2_n2_3_1, axiom, !( (pi_d1_n1_3_1 * pbl_3_1) -o (pb_d2_n2_3_1 * pil_d1_n1_3_1) ) ).
+fof(ti_d1_n1_d2_n2_3_2, axiom, !( (pi_d1_n1_3_2 * pbl_3_2) -o (pil_d1_n1_3_2 * pb_d2_n2_3_2) ) ).
+fof(ti_d1_n1_d2_n2_3_3, axiom, !( (pi_d1_n1_3_3 * pbl_3_3) -o (pil_d1_n1_3_3 * pb_d2_n2_3_3) ) ).
+fof(ti_d1_n2_d1_n1_1_1, axiom, !( (po_d1_n1_2_1 * pbl_1_1) -o (pol_d1_n1_2_1 * pb_d1_n1_1_1) ) ).
+fof(ti_d1_n2_d1_n1_1_2, axiom, !( (po_d1_n1_2_2 * pbl_1_2) -o (pol_d1_n1_2_2 * pb_d1_n1_1_2) ) ).
+fof(ti_d1_n2_d1_n1_1_3, axiom, !( (po_d1_n1_2_3 * pbl_1_3) -o (pol_d1_n1_2_3 * pb_d1_n1_1_3) ) ).
+fof(ti_d1_n2_d1_n1_2_1, axiom, !( (po_d1_n1_3_1 * pbl_2_1) -o (pol_d1_n1_3_1 * pb_d1_n1_2_1) ) ).
+fof(ti_d1_n2_d1_n1_2_2, axiom, !( (po_d1_n1_3_2 * pbl_2_2) -o (pol_d1_n1_3_2 * pb_d1_n1_2_2) ) ).
+fof(ti_d1_n2_d1_n1_2_3, axiom, !( (po_d1_n1_3_3 * pbl_2_3) -o (pol_d1_n1_3_3 * pb_d1_n1_2_3) ) ).
+fof(ti_d1_n2_d1_n1_3_1, axiom, !( (po_d1_n1_1_1 * pbl_3_1) -o (pol_d1_n1_1_1 * pb_d1_n1_3_1) ) ).
+fof(ti_d1_n2_d1_n1_3_2, axiom, !( (po_d1_n1_1_2 * pbl_3_2) -o (pol_d1_n1_1_2 * pb_d1_n1_3_2) ) ).
+fof(ti_d1_n2_d1_n1_3_3, axiom, !( (po_d1_n1_1_3 * pbl_3_3) -o (pol_d1_n1_1_3 * pb_d1_n1_3_3) ) ).
+fof(ti_d1_n2_d2_n1_1_1, axiom, !( (po_d1_n1_2_1 * pbl_1_1) -o (pol_d1_n1_2_1 * pb_d2_n1_1_1) ) ).
+fof(ti_d1_n2_d2_n1_1_2, axiom, !( (po_d1_n1_2_2 * pbl_1_2) -o (pol_d1_n1_2_2 * pb_d2_n1_1_2) ) ).
+fof(ti_d1_n2_d2_n1_1_3, axiom, !( (po_d1_n1_2_3 * pbl_1_3) -o (pol_d1_n1_2_3 * pb_d2_n1_1_3) ) ).
+fof(ti_d1_n2_d2_n1_2_1, axiom, !( (po_d1_n1_3_1 * pbl_2_1) -o (pol_d1_n1_3_1 * pb_d2_n1_2_1) ) ).
+fof(ti_d1_n2_d2_n1_2_2, axiom, !( (po_d1_n1_3_2 * pbl_2_2) -o (pol_d1_n1_3_2 * pb_d2_n1_2_2) ) ).
+fof(ti_d1_n2_d2_n1_2_3, axiom, !( (po_d1_n1_3_3 * pbl_2_3) -o (pol_d1_n1_3_3 * pb_d2_n1_2_3) ) ).
+fof(ti_d1_n2_d2_n1_3_1, axiom, !( (po_d1_n1_1_1 * pbl_3_1) -o (pol_d1_n1_1_1 * pb_d2_n1_3_1) ) ).
+fof(ti_d1_n2_d2_n1_3_2, axiom, !( (po_d1_n1_1_2 * pbl_3_2) -o (pol_d1_n1_1_2 * pb_d2_n1_3_2) ) ).
+fof(ti_d1_n2_d2_n1_3_3, axiom, !( (po_d1_n1_1_3 * pbl_3_3) -o (pol_d1_n1_1_3 * pb_d2_n1_3_3) ) ).
+fof(ti_d1_n2_d2_n2_1_1, axiom, !( (po_d1_n1_2_1 * pbl_1_1) -o (pol_d1_n1_2_1 * pb_d2_n2_1_1) ) ).
+fof(ti_d1_n2_d2_n2_1_2, axiom, !( (po_d1_n1_2_2 * pbl_1_2) -o (pol_d1_n1_2_2 * pb_d2_n2_1_2) ) ).
+fof(ti_d1_n2_d2_n2_1_3, axiom, !( (po_d1_n1_2_3 * pbl_1_3) -o (pol_d1_n1_2_3 * pb_d2_n2_1_3) ) ).
+fof(ti_d1_n2_d2_n2_2_1, axiom, !( (po_d1_n1_3_1 * pbl_2_1) -o (pol_d1_n1_3_1 * pb_d2_n2_2_1) ) ).
+fof(ti_d1_n2_d2_n2_2_2, axiom, !( (po_d1_n1_3_2 * pbl_2_2) -o (pol_d1_n1_3_2 * pb_d2_n2_2_2) ) ).
+fof(ti_d1_n2_d2_n2_2_3, axiom, !( (po_d1_n1_3_3 * pbl_2_3) -o (pol_d1_n1_3_3 * pb_d2_n2_2_3) ) ).
+fof(ti_d1_n2_d2_n2_3_1, axiom, !( (po_d1_n1_1_1 * pbl_3_1) -o (pol_d1_n1_1_1 * pb_d2_n2_3_1) ) ).
+fof(ti_d1_n2_d2_n2_3_2, axiom, !( (po_d1_n1_1_2 * pbl_3_2) -o (pol_d1_n1_1_2 * pb_d2_n2_3_2) ) ).
+fof(ti_d1_n2_d2_n2_3_3, axiom, !( (po_d1_n1_1_3 * pbl_3_3) -o (pol_d1_n1_1_3 * pb_d2_n2_3_3) ) ).
+fof(ti_d2_n1_d1_n1_1_1, axiom, !( (pi_d2_n1_1_1 * pbl_1_1) -o (pil_d2_n1_1_1 * pb_d1_n1_1_1) ) ).
+fof(ti_d2_n1_d1_n1_1_2, axiom, !( (pi_d2_n1_1_2 * pbl_1_2) -o (pil_d2_n1_1_2 * pb_d1_n1_1_2) ) ).
+fof(ti_d2_n1_d1_n1_1_3, axiom, !( (pi_d2_n1_1_3 * pbl_1_3) -o (pil_d2_n1_1_3 * pb_d1_n1_1_3) ) ).
+fof(ti_d2_n1_d1_n1_2_1, axiom, !( (pi_d2_n1_2_1 * pbl_2_1) -o (pil_d2_n1_2_1 * pb_d1_n1_2_1) ) ).
+fof(ti_d2_n1_d1_n1_2_2, axiom, !( (pi_d2_n1_2_2 * pbl_2_2) -o (pil_d2_n1_2_2 * pb_d1_n1_2_2) ) ).
+fof(ti_d2_n1_d1_n1_2_3, axiom, !( (pi_d2_n1_2_3 * pbl_2_3) -o (pil_d2_n1_2_3 * pb_d1_n1_2_3) ) ).
+fof(ti_d2_n1_d1_n1_3_1, axiom, !( (pi_d2_n1_3_1 * pbl_3_1) -o (pil_d2_n1_3_1 * pb_d1_n1_3_1) ) ).
+fof(ti_d2_n1_d1_n1_3_2, axiom, !( (pi_d2_n1_3_2 * pbl_3_2) -o (pil_d2_n1_3_2 * pb_d1_n1_3_2) ) ).
+fof(ti_d2_n1_d1_n1_3_3, axiom, !( (pi_d2_n1_3_3 * pbl_3_3) -o (pil_d2_n1_3_3 * pb_d1_n1_3_3) ) ).
+fof(ti_d2_n1_d1_n2_1_1, axiom, !( (pi_d2_n1_1_1 * pbl_1_1) -o (pil_d2_n1_1_1 * pb_d1_n2_1_1) ) ).
+fof(ti_d2_n1_d1_n2_1_2, axiom, !( (pi_d2_n1_1_2 * pbl_1_2) -o (pil_d2_n1_1_2 * pb_d1_n2_1_2) ) ).
+fof(ti_d2_n1_d1_n2_1_3, axiom, !( (pi_d2_n1_1_3 * pbl_1_3) -o (pil_d2_n1_1_3 * pb_d1_n2_1_3) ) ).
+fof(ti_d2_n1_d1_n2_2_1, axiom, !( (pi_d2_n1_2_1 * pbl_2_1) -o (pil_d2_n1_2_1 * pb_d1_n2_2_1) ) ).
+fof(ti_d2_n1_d1_n2_2_2, axiom, !( (pi_d2_n1_2_2 * pbl_2_2) -o (pil_d2_n1_2_2 * pb_d1_n2_2_2) ) ).
+fof(ti_d2_n1_d1_n2_2_3, axiom, !( (pi_d2_n1_2_3 * pbl_2_3) -o (pil_d2_n1_2_3 * pb_d1_n2_2_3) ) ).
+fof(ti_d2_n1_d1_n2_3_1, axiom, !( (pi_d2_n1_3_1 * pbl_3_1) -o (pil_d2_n1_3_1 * pb_d1_n2_3_1) ) ).
+fof(ti_d2_n1_d1_n2_3_2, axiom, !( (pi_d2_n1_3_2 * pbl_3_2) -o (pil_d2_n1_3_2 * pb_d1_n2_3_2) ) ).
+fof(ti_d2_n1_d1_n2_3_3, axiom, !( (pi_d2_n1_3_3 * pbl_3_3) -o (pil_d2_n1_3_3 * pb_d1_n2_3_3) ) ).
+fof(ti_d2_n1_d2_n2_1_1, axiom, !( (pi_d2_n1_1_1 * pbl_1_1) -o (pil_d2_n1_1_1 * pb_d2_n2_1_1) ) ).
+fof(ti_d2_n1_d2_n2_1_2, axiom, !( (pi_d2_n1_1_2 * pbl_1_2) -o (pil_d2_n1_1_2 * pb_d2_n2_1_2) ) ).
+fof(ti_d2_n1_d2_n2_1_3, axiom, !( (pi_d2_n1_1_3 * pbl_1_3) -o (pil_d2_n1_1_3 * pb_d2_n2_1_3) ) ).
+fof(ti_d2_n1_d2_n2_2_1, axiom, !( (pi_d2_n1_2_1 * pbl_2_1) -o (pil_d2_n1_2_1 * pb_d2_n2_2_1) ) ).
+fof(ti_d2_n1_d2_n2_2_2, axiom, !( (pi_d2_n1_2_2 * pbl_2_2) -o (pil_d2_n1_2_2 * pb_d2_n2_2_2) ) ).
+fof(ti_d2_n1_d2_n2_2_3, axiom, !( (pi_d2_n1_2_3 * pbl_2_3) -o (pil_d2_n1_2_3 * pb_d2_n2_2_3) ) ).
+fof(ti_d2_n1_d2_n2_3_1, axiom, !( (pi_d2_n1_3_1 * pbl_3_1) -o (pil_d2_n1_3_1 * pb_d2_n2_3_1) ) ).
+fof(ti_d2_n1_d2_n2_3_2, axiom, !( (pi_d2_n1_3_2 * pbl_3_2) -o (pil_d2_n1_3_2 * pb_d2_n2_3_2) ) ).
+fof(ti_d2_n1_d2_n2_3_3, axiom, !( (pi_d2_n1_3_3 * pbl_3_3) -o (pil_d2_n1_3_3 * pb_d2_n2_3_3) ) ).
+fof(ti_d2_n2_d1_n1_1_1, axiom, !( (po_d2_n1_1_2 * pbl_1_1) -o (pol_d2_n1_1_2 * pb_d1_n1_1_1) ) ).
+fof(ti_d2_n2_d1_n1_1_2, axiom, !( (po_d2_n1_1_3 * pbl_1_2) -o (pol_d2_n1_1_3 * pb_d1_n1_1_2) ) ).
+fof(ti_d2_n2_d1_n1_1_3, axiom, !( (po_d2_n1_1_1 * pbl_1_3) -o (pol_d2_n1_1_1 * pb_d1_n1_1_3) ) ).
+fof(ti_d2_n2_d1_n1_2_1, axiom, !( (po_d2_n1_2_2 * pbl_2_1) -o (pol_d2_n1_2_2 * pb_d1_n1_2_1) ) ).
+fof(ti_d2_n2_d1_n1_2_2, axiom, !( (po_d2_n1_2_3 * pbl_2_2) -o (pol_d2_n1_2_3 * pb_d1_n1_2_2) ) ).
+fof(ti_d2_n2_d1_n1_2_3, axiom, !( (po_d2_n1_2_1 * pbl_2_3) -o (pol_d2_n1_2_1 * pb_d1_n1_2_3) ) ).
+fof(ti_d2_n2_d1_n1_3_1, axiom, !( (po_d2_n1_3_2 * pbl_3_1) -o (pol_d2_n1_3_2 * pb_d1_n1_3_1) ) ).
+fof(ti_d2_n2_d1_n1_3_2, axiom, !( (po_d2_n1_3_3 * pbl_3_2) -o (pol_d2_n1_3_3 * pb_d1_n1_3_2) ) ).
+fof(ti_d2_n2_d1_n1_3_3, axiom, !( (po_d2_n1_3_1 * pbl_3_3) -o (pol_d2_n1_3_1 * pb_d1_n1_3_3) ) ).
+fof(ti_d2_n2_d1_n2_1_1, axiom, !( (po_d2_n1_1_2 * pbl_1_1) -o (pol_d2_n1_1_2 * pb_d1_n2_1_1) ) ).
+fof(ti_d2_n2_d1_n2_1_2, axiom, !( (po_d2_n1_1_3 * pbl_1_2) -o (pol_d2_n1_1_3 * pb_d1_n2_1_2) ) ).
+fof(ti_d2_n2_d1_n2_1_3, axiom, !( (po_d2_n1_1_1 * pbl_1_3) -o (pol_d2_n1_1_1 * pb_d1_n2_1_3) ) ).
+fof(ti_d2_n2_d1_n2_2_1, axiom, !( (po_d2_n1_2_2 * pbl_2_1) -o (pol_d2_n1_2_2 * pb_d1_n2_2_1) ) ).
+fof(ti_d2_n2_d1_n2_2_2, axiom, !( (po_d2_n1_2_3 * pbl_2_2) -o (pol_d2_n1_2_3 * pb_d1_n2_2_2) ) ).
+fof(ti_d2_n2_d1_n2_2_3, axiom, !( (po_d2_n1_2_1 * pbl_2_3) -o (pol_d2_n1_2_1 * pb_d1_n2_2_3) ) ).
+fof(ti_d2_n2_d1_n2_3_1, axiom, !( (po_d2_n1_3_2 * pbl_3_1) -o (pol_d2_n1_3_2 * pb_d1_n2_3_1) ) ).
+fof(ti_d2_n2_d1_n2_3_2, axiom, !( (po_d2_n1_3_3 * pbl_3_2) -o (pol_d2_n1_3_3 * pb_d1_n2_3_2) ) ).
+fof(ti_d2_n2_d1_n2_3_3, axiom, !( (po_d2_n1_3_1 * pbl_3_3) -o (pol_d2_n1_3_1 * pb_d1_n2_3_3) ) ).
+fof(ti_d2_n2_d2_n1_1_1, axiom, !( (po_d2_n1_1_2 * pbl_1_1) -o (pol_d2_n1_1_2 * pb_d2_n1_1_1) ) ).
+fof(ti_d2_n2_d2_n1_1_2, axiom, !( (po_d2_n1_1_3 * pbl_1_2) -o (pol_d2_n1_1_3 * pb_d2_n1_1_2) ) ).
+fof(ti_d2_n2_d2_n1_1_3, axiom, !( (po_d2_n1_1_1 * pbl_1_3) -o (pol_d2_n1_1_1 * pb_d2_n1_1_3) ) ).
+fof(ti_d2_n2_d2_n1_2_1, axiom, !( (po_d2_n1_2_2 * pbl_2_1) -o (pol_d2_n1_2_2 * pb_d2_n1_2_1) ) ).
+fof(ti_d2_n2_d2_n1_2_2, axiom, !( (po_d2_n1_2_3 * pbl_2_2) -o (pol_d2_n1_2_3 * pb_d2_n1_2_2) ) ).
+fof(ti_d2_n2_d2_n1_2_3, axiom, !( (po_d2_n1_2_1 * pbl_2_3) -o (pol_d2_n1_2_1 * pb_d2_n1_2_3) ) ).
+fof(ti_d2_n2_d2_n1_3_1, axiom, !( (po_d2_n1_3_2 * pbl_3_1) -o (pol_d2_n1_3_2 * pb_d2_n1_3_1) ) ).
+fof(ti_d2_n2_d2_n1_3_2, axiom, !( (po_d2_n1_3_3 * pbl_3_2) -o (pol_d2_n1_3_3 * pb_d2_n1_3_2) ) ).
+fof(ti_d2_n2_d2_n1_3_3, axiom, !( (po_d2_n1_3_1 * pbl_3_3) -o (pol_d2_n1_3_1 * pb_d2_n1_3_3) ) ).
+fof(to_d1_n1_1_1, axiom, !( (pol_d1_n1_1_1 * pb_d1_n1_1_1) -o (po_d1_n1_1_1 * pbl_1_1) ) ).
+fof(to_d1_n1_1_2, axiom, !( (pol_d1_n1_1_2 * pb_d1_n1_1_2) -o (po_d1_n1_1_2 * pbl_1_2) ) ).
+fof(to_d1_n1_1_3, axiom, !( (pol_d1_n1_1_3 * pb_d1_n1_1_3) -o (po_d1_n1_1_3 * pbl_1_3) ) ).
+fof(to_d1_n1_2_1, axiom, !( (pol_d1_n1_2_1 * pb_d1_n1_2_1) -o (po_d1_n1_2_1 * pbl_2_1) ) ).
+fof(to_d1_n1_2_2, axiom, !( (pol_d1_n1_2_2 * pb_d1_n1_2_2) -o (po_d1_n1_2_2 * pbl_2_2) ) ).
+fof(to_d1_n1_2_3, axiom, !( (pol_d1_n1_2_3 * pb_d1_n1_2_3) -o (po_d1_n1_2_3 * pbl_2_3) ) ).
+fof(to_d1_n1_3_1, axiom, !( (pol_d1_n1_3_1 * pb_d1_n1_3_1) -o (po_d1_n1_3_1 * pbl_3_1) ) ).
+fof(to_d1_n1_3_2, axiom, !( (pol_d1_n1_3_2 * pb_d1_n1_3_2) -o (po_d1_n1_3_2 * pbl_3_2) ) ).
+fof(to_d1_n1_3_3, axiom, !( (pol_d1_n1_3_3 * pb_d1_n1_3_3) -o (po_d1_n1_3_3 * pbl_3_3) ) ).
+fof(to_d1_n2_1_1, axiom, !( (pil_d1_n1_2_1 * pb_d1_n2_1_1) -o (pi_d1_n1_2_1 * pbl_1_1) ) ).
+fof(to_d1_n2_1_2, axiom, !( (pil_d1_n1_2_2 * pb_d1_n2_1_2) -o (pi_d1_n1_2_2 * pbl_1_2) ) ).
+fof(to_d1_n2_1_3, axiom, !( (pil_d1_n1_2_3 * pb_d1_n2_1_3) -o (pi_d1_n1_2_3 * pbl_1_3) ) ).
+fof(to_d1_n2_2_1, axiom, !( (pil_d1_n1_3_1 * pb_d1_n2_2_1) -o (pi_d1_n1_3_1 * pbl_2_1) ) ).
+fof(to_d1_n2_2_2, axiom, !( (pil_d1_n1_3_2 * pb_d1_n2_2_2) -o (pi_d1_n1_3_2 * pbl_2_2) ) ).
+fof(to_d1_n2_2_3, axiom, !( (pil_d1_n1_3_3 * pb_d1_n2_2_3) -o (pi_d1_n1_3_3 * pbl_2_3) ) ).
+fof(to_d1_n2_3_1, axiom, !( (pil_d1_n1_1_1 * pb_d1_n2_3_1) -o (pi_d1_n1_1_1 * pbl_3_1) ) ).
+fof(to_d1_n2_3_2, axiom, !( (pil_d1_n1_1_2 * pb_d1_n2_3_2) -o (pi_d1_n1_1_2 * pbl_3_2) ) ).
+fof(to_d1_n2_3_3, axiom, !( (pil_d1_n1_1_3 * pb_d1_n2_3_3) -o (pi_d1_n1_1_3 * pbl_3_3) ) ).
+fof(to_d2_n1_1_1, axiom, !( (pol_d2_n1_1_1 * pb_d2_n1_1_1) -o (po_d2_n1_1_1 * pbl_1_1) ) ).
+fof(to_d2_n1_1_2, axiom, !( (pol_d2_n1_1_2 * pb_d2_n1_1_2) -o (po_d2_n1_1_2 * pbl_1_2) ) ).
+fof(to_d2_n1_1_3, axiom, !( (pol_d2_n1_1_3 * pb_d2_n1_1_3) -o (po_d2_n1_1_3 * pbl_1_3) ) ).
+fof(to_d2_n1_2_1, axiom, !( (pol_d2_n1_2_1 * pb_d2_n1_2_1) -o (po_d2_n1_2_1 * pbl_2_1) ) ).
+fof(to_d2_n1_2_2, axiom, !( (pol_d2_n1_2_2 * pb_d2_n1_2_2) -o (po_d2_n1_2_2 * pbl_2_2) ) ).
+fof(to_d2_n1_2_3, axiom, !( (pol_d2_n1_2_3 * pb_d2_n1_2_3) -o (po_d2_n1_2_3 * pbl_2_3) ) ).
+fof(to_d2_n1_3_1, axiom, !( (pol_d2_n1_3_1 * pb_d2_n1_3_1) -o (po_d2_n1_3_1 * pbl_3_1) ) ).
+fof(to_d2_n1_3_2, axiom, !( (pol_d2_n1_3_2 * pb_d2_n1_3_2) -o (po_d2_n1_3_2 * pbl_3_2) ) ).
+fof(to_d2_n1_3_3, axiom, !( (pol_d2_n1_3_3 * pb_d2_n1_3_3) -o (po_d2_n1_3_3 * pbl_3_3) ) ).
+fof(to_d2_n2_1_1, axiom, !( (pil_d2_n1_1_2 * pb_d2_n2_1_1) -o (pi_d2_n1_1_2 * pbl_1_1) ) ).
+fof(to_d2_n2_1_2, axiom, !( (pil_d2_n1_1_3 * pb_d2_n2_1_2) -o (pi_d2_n1_1_3 * pbl_1_2) ) ).
+fof(to_d2_n2_1_3, axiom, !( (pil_d2_n1_1_1 * pb_d2_n2_1_3) -o (pi_d2_n1_1_1 * pbl_1_3) ) ).
+fof(to_d2_n2_2_1, axiom, !( (pil_d2_n1_2_2 * pb_d2_n2_2_1) -o (pi_d2_n1_2_2 * pbl_2_1) ) ).
+fof(to_d2_n2_2_2, axiom, !( (pil_d2_n1_2_3 * pb_d2_n2_2_2) -o (pi_d2_n1_2_3 * pbl_2_2) ) ).
+fof(to_d2_n2_2_3, axiom, !( (pil_d2_n1_2_1 * pb_d2_n2_2_3) -o (pi_d2_n1_2_1 * pbl_2_3) ) ).
+fof(to_d2_n2_3_1, axiom, !( (pil_d2_n1_3_2 * pb_d2_n2_3_1) -o (pi_d2_n1_3_2 * pbl_3_1) ) ).
+fof(to_d2_n2_3_2, axiom, !( (pil_d2_n1_3_3 * pb_d2_n2_3_2) -o (pi_d2_n1_3_3 * pbl_3_2) ) ).
+fof(to_d2_n2_3_3, axiom, !( (pil_d2_n1_3_1 * pb_d2_n2_3_3) -o (pi_d2_n1_3_1 * pbl_3_3) ) ).
+fof(con1, conjecture, pb_d1_n1_1_1 * pb_d1_n1_1_1 * pb_d1_n1_1_1 * pb_d1_n1_1_2 * pb_d1_n1_1_2 * pb_d1_n1_1_2 * pb_d1_n1_1_3 * pb_d1_n1_1_3 * pb_d1_n1_1_3 * pb_d1_n1_2_1 * pb_d1_n1_2_1 * pb_d1_n1_2_1 * pb_d1_n1_2_2 * pb_d1_n1_2_2 * pb_d1_n1_2_2 * pb_d1_n1_2_3 * pb_d1_n1_2_3 * pb_d1_n1_2_3 * pb_d1_n1_3_1 * pb_d1_n1_3_1 * pb_d1_n1_3_1 * pb_d1_n1_3_2 * pb_d1_n1_3_2 * pb_d1_n1_3_2 * pb_d1_n1_3_3 * pb_d1_n1_3_3 * pb_d1_n1_3_3 * pb_d1_n2_1_1 * pb_d1_n2_1_2 * pb_d1_n2_1_3 * pb_d1_n2_2_1 * pb_d1_n2_2_2 * pb_d1_n2_2_3 * pb_d1_n2_3_1 * pb_d1_n2_3_2 * pb_d1_n2_3_3 * pb_d2_n2_1_2 * pb_d2_n2_1_3 * pb_d2_n2_2_1 * pb_d2_n2_2_2 * pb_d2_n2_2_3 * pb_d2_n2_3_1 * pb_d2_n2_3_2 * pb_d2_n2_3_3 * pbl_1_1 * pbl_1_1 * pbl_1_1 * pbl_1_1 * pbl_1_1 * pbl_1_1 * pbl_1_1 * pbl_1_1 * pbl_1_2 * pbl_1_2 * pbl_1_2 * pbl_1_2 * pbl_1_2 * pbl_1_2 * pbl_1_2 * pbl_1_3 * pbl_1_3 * pbl_1_3 * pbl_1_3 * pbl_1_3 * pbl_1_3 * pbl_1_3 * pbl_2_1 * pbl_2_1 * pbl_2_1 * pbl_2_1 * pbl_2_1 * pbl_2_1 * pbl_2_1 * pbl_2_2 * pbl_2_2 * pbl_2_2 * pbl_2_2 * pbl_2_2 * pbl_2_2 * pbl_2_2 * pbl_2_3 * pbl_2_3 * pbl_2_3 * pbl_2_3 * pbl_2_3 * pbl_2_3 * pbl_2_3 * pbl_3_1 * pbl_3_1 * pbl_3_1 * pbl_3_1 * pbl_3_1 * pbl_3_1 * pbl_3_1 * pbl_3_2 * pbl_3_2 * pbl_3_2 * pbl_3_2 * pbl_3_2 * pbl_3_2 * pbl_3_2 * pbl_3_3 * pbl_3_3 * pbl_3_3 * pbl_3_3 * pbl_3_3 * pbl_3_3 * pbl_3_3 * pi_d1_n1_1_1 * pi_d1_n1_1_2 * pi_d1_n1_1_3 * pi_d1_n1_2_1 * pi_d1_n1_2_2 * pi_d1_n1_2_3 * pi_d1_n1_3_1 * pi_d1_n1_3_2 * pi_d1_n1_3_3 * pi_d2_n1_1_2 * pil_d2_n1_1_1 * pil_d2_n1_1_3 * pil_d2_n1_2_1 * pil_d2_n1_2_2 * pil_d2_n1_2_3 * pil_d2_n1_3_1 * pil_d2_n1_3_2 * pil_d2_n1_3_3 * po_d1_n1_1_1 * po_d1_n1_1_2 * po_d1_n1_1_3 * po_d1_n1_2_1 * po_d1_n1_2_2 * po_d1_n1_2_3 * po_d1_n1_3_1 * po_d1_n1_3_2 * po_d1_n1_3_3 * po_d2_n1_1_1 * po_d2_n1_1_2 * po_d2_n1_1_3 * po_d2_n1_2_1 * po_d2_n1_2_2 * po_d2_n1_2_3 * po_d2_n1_3_1 * po_d2_n1_3_2 * po_d2_n1_3_3).

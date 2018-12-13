@@ -1,0 +1,23 @@
+
+%--------------------------------------------------------------------------
+% File     : 
+% Domain   : Petri-nets
+% Problem  : SwimmingPool 
+% Version  : 1.0
+% Refs     : The Model Checking Contest
+% Source   : https://pnrepository.lip6.fr/mcc/models/all/browser.html
+%
+% Status (linear) : Theorem
+% Rating (linear) : 0.00 v1.0.0
+%--------------------------------------------------------------------------
+fof(inital_state, axiom, Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Out * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags).
+fof(Enter, axiom, !( (Out) -o (Entered) ) ).
+fof(RKey, axiom, !( (Dressed) -o (Out * Cabins) ) ).
+fof(GetK2, axiom, !( (Cabins * InBath) -o (Dress) ) ).
+fof(RBag, axiom, !( (Dress) -o (Bags * Dressed) ) ).
+fof(GetK, axiom, !( (Entered * Cabins) -o (WaitBag) ) ).
+fof(RelK, axiom, !( (Undress) -o (Cabins * InBath) ) ).
+fof(GetB, axiom, !( (WaitBag * Bags) -o (Undress) ) ).
+fof(con1, conjecture, Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Bags * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Cabins * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered * Entered).
+
+%--------------------------------------------------------------------------
