@@ -12,9 +12,9 @@ This repository contains a collection of theorem proving problems for classical 
 The repository  follows a syntax similar to the one of [TPTP](http://tptp.org/).  Uppercase and lowercase strings are used to denote atomic propositions and formulas are built from:
 
 ```
-F ::= bot, top, 0, 1, *, &, |, +, -o, !, ?, ^
+F ::= bot, top, 0, 1, F * F, F & F, F | F, F + F, F -o F, !F, ?F, F^
 ```
-representing, respectively, the units, the connectives  tensor, with, par, plus, lolli, bang, question mark and orthogonal. 
+representing, respectively, the units (bottom, top, zero and one), the connectives (tensor, with, par, plus, lolli, bang and question mark) and the orthogonal.
 
 Axioms (formulas on the left side of the sequent) and conjectures (the formula on the right side of the sequent) are
 specified as ``fof(name, axiom, F)`` and ``fof(name, conjecture, F)`` respectively. The ``name`` chosen is not important.
@@ -23,7 +23,7 @@ specified as ``fof(name, axiom, F)`` and ``fof(name, conjecture, F)`` respective
 
 ## Problems
 ### Intuitionistic problems
-The problems in the directory  ``ILL``  were obtained from three sources:
+The problems in the directory  ``ILL``  were obtained from three main sources:
 
 1. Kleene's problems for intuitionistic logic from "Introduction to Metamathematics"
 2. Intuitionistic Logic Theorem Provers library [ILTP](http://iltp.de/)
