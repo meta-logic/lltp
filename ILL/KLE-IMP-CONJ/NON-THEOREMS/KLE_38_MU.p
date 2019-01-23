@@ -10,5 +10,5 @@
 % Rating   : 
 % Comments : 
 %--------------------------------------------------------------------------
-fof(ax1, axiom,  A -o bot ).
-fof(conj, conjecture,  ((A -o B) -o (A -o bot)) * ((A -o bot) -o (A -o B))).
+fof(ax1, axiom,  A -o C ).
+fof(conj, conjecture,  ((A -o B) -o (A -o C)) * ((A -o C) -o (A -o B))).

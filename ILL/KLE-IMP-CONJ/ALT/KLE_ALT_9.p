@@ -10,4 +10,4 @@
 % Rating   : 
 % Comments : 
 %--------------------------------------------------------------------------
-fof(conj, conjecture,  ((A -o bot) -o bot) * ((B -o bot) -o bot) -o ((A * B -o bot) -o bot)).
+fof(conj, conjecture,  ((A -o C) -o C) * ((B -o C) -o C) -o ((A * B -o C) -o C)).
