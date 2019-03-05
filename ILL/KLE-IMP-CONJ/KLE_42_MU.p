@@ -10,4 +10,4 @@
 % Rating   : 
 % Comments : 
 %--------------------------------------------------------------------------
-fof(conj, conjecture,  A -o ((A -o B) -o B)).
+fof(conj, conjecture,  A -o ((A -o bot) -o bot)).
