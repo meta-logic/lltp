@@ -10,4 +10,4 @@
 % Rating   : 
 % Comments : 
 %--------------------------------------------------------------------------
-fof(conj, conjecture,  ! ((! A -o B) -o bot) -o ((A * (B -o bot) -o 0) -o bot)).
+fof(conj, conjecture,  ! ((! A -o B) -o R) -o ((A * (B -o R) -o 0) -o R)).

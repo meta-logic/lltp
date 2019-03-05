@@ -11,6 +11,6 @@
 % Comments : 
 %--------------------------------------------------------------------------
 fof(ax1, axiom,  A -o (B -o C)).
-fof(ax2, axiom, (A -o bot) -o bot).
-fof(ax3, axiom, (B -o bot) -o bot ).
-fof(conj, conjecture,  (C -o bot) -o bot).
+fof(ax2, axiom, (A -o R) -o R).
+fof(ax3, axiom, (B -o R) -o R ).
+fof(conj, conjecture,  (C -o R) -o R).

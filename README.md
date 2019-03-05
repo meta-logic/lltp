@@ -33,7 +33,7 @@ The collections ``ILLTP-\*`` and ``KLE-\*`` are obtained via the translations ca
 applied to the problems from sources 1 and 2 above. 
 
 The collection  ``KLE-IMP-CONJ`` considers the fragment of intuitionistic logic with implication and conjunction. The above mentioned translations are used as well as the multiplicative 
-translation that substitutes the intuitionistic connectives by their multiplicative linear version. This translation does not preserve provability and the resulting non-provable sequents are in the directory ``NON-THEOREMS``. The directory ``ALT`` proposes an alternative translation for the non-provable sequent with a small set of bangs and/or additives.
+translation that substitutes the intuitionistic connectives by their multiplicative linear version (negation is translated as _ -o R, where R is just a particular chosen propositional variable). This translation does not preserve provability and the resulting non-provable sequents are in the directory ``NON-THEOREMS``. The directory ``ALT`` proposes an alternative translation for the non-provable sequent with a small set of bangs and/or additives.
 
 
 The collection ``MCC`` (split into two zipped files)
