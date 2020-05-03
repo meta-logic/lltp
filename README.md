@@ -1,7 +1,7 @@
-# LLTP
+# LLTP (Linear Logic Theorem Proving)
 
 
-**Benchmark of problems for linear logic provers**
+**a benchmark of problems for linear logic provers**
 
 
 
@@ -14,7 +14,7 @@ The repository  follows a syntax similar to the one of [TPTP](http://tptp.org/).
 ```
 F ::= bot, top, 0, 1, F * F, F & F, F | F, F + F, F -o F, !F, ?F, F^
 ```
-representing, respectively, the units (bottom, top, zero and one), the connectives (tensor, with, par, plus, lolli, bang and question mark) and the orthogonal.
+representing, respectively, the units (bottom, top, zero and one), the connectives (tensor, with, par, plus, linear implication, bang and question mark) and the orthogonal/negation.
 
 Axioms (formulas on the left side of the sequent) and conjectures (the formula on the right side of the sequent) are
 specified as ``fof(name, axiom, F)`` and ``fof(name, conjecture, F)`` respectively. The ``name`` chosen is not important.
@@ -25,11 +25,11 @@ specified as ``fof(name, axiom, F)`` and ``fof(name, conjecture, F)`` respective
 ### Intuitionistic problems
 The collection of intuitionistic problems is described in [4] and it can be found in the directory  ``ILL``. The problems  were obtained from three main sources:
 
-1. Kleene's problems for intuitionistic logic from "Introduction to Metamathematics"
+1. Kleene's theorems for classic and intuitionistic logic from "Introduction to Metamathematics" (New York: van Nostrand, 1952)
 2. Intuitionistic Logic Theorem Provers library [ILTP](http://iltp.de/)
 3. Petri-nets from the [Model Checking Contest](https://pnrepository.lip6.fr/mcc/)
 
-The collections ``ILLTP-\*`` and ``KLE-\*`` are obtained via the translations call-by-name, call-by-value [1] and Liang and Miller's 0/1 [2],
+The collections ``ILLTP-\*`` and ``KLE-\*`` are obtained via the Girard translations in [1] and Liang and Miller's 0/1 [2],
 applied to the problems from sources 1 and 2 above. 
 
 The collection  ``KLE-IMP-CONJ`` considers the fragment of intuitionistic logic with implication and conjunction. The above mentioned translations are used as well as the multiplicative 
@@ -38,14 +38,14 @@ translation that substitutes the intuitionistic connectives by their multiplicat
 
 The collection ``MCC`` (split into two zipped files)
 was obtained by encoding the petri-nets from 3 using the ideas from [3], and finding reachable states 
-using a program in [maude](http://maude.cs.uiuc.edu/).
+using a [maude](http://maude.cs.uiuc.edu/) program.
 
 Some results on these problems can be found [here](https://github.com/carlosolarte/Linear-Logic-Prover-in-Maude) and [here](https://github.com/wujuihsuan2016/LL_prover). 
 
 The current status for all the collections can be found in the TXT files. Those results were obtained with [this prover](https://github.com/carlosolarte/Linear-Logic-Prover-in-Maude).
 
 ### Classical problems
-The problems in the directory  ``CLL``
+The problems in the directory  ``CLL`` (classical linear logic)
 
 ## References
 [1] _Linear Logic_ by Jean-Yves Girard. Theoretical Computer Science (50), pp. 1-102 (1987)
