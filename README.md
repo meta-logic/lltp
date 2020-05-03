@@ -23,7 +23,7 @@ specified as ``fof(name, axiom, F)`` and ``fof(name, conjecture, F)`` respective
 
 ## Problems
 ### Intuitionistic problems
-The problems in the directory  ``ILL``  were obtained from three main sources:
+The collection of intuitionistic problems is described in [4] and it can be found in the directory  ``ILL``. The problems  were obtained from three main sources:
 
 1. Kleene's problems for intuitionistic logic from "Introduction to Metamathematics"
 2. Intuitionistic Logic Theorem Provers library [ILTP](http://iltp.de/)
@@ -54,6 +54,8 @@ The problems in the directory  ``CLL``
 
 [3] _Petri Nets and Linear Logic: a case study for logic programming_ by Iliano Cervesato. 
 1995 Joint Conference on Declarative Programming — GULP-PRODE'9 [[pdf](https://web2.qatar.cmu.edu/iliano/papers/gulp95.pdf)]
+
+[4] _The ILLTP Library for Intuitionistic Linear Logic_ by Carlos Olarte, Valeria de Paiva, Elaine Pimentel and Giselle Reis. In Proceedings Linearity-TLLA 2018, [arXiv:1904.06850](https://arxiv.org/abs/1904.06850)
 
 ---
 
