@@ -1,7 +1,7 @@
 # LLTP (Linear Logic Theorem Proving)
 
 
-**a benchmark of problems for linear logic provers**
+**A benchmark of problems for linear logic provers**
 
 
 
@@ -25,12 +25,11 @@ specified as ``fof(name, axiom, F)`` and ``fof(name, conjecture, F)`` respective
 ### Intuitionistic problems
 The collection of intuitionistic problems is described in [4] and it can be found in the directory  ``ILL``. The problems  were obtained from three main sources:
 
-1. Kleene's theorems for classic and intuitionistic logic from "Introduction to Metamathematics" (New York: van Nostrand, 1952)
+1. Kleene's theorems for intuitionistic logic from "Introduction to Metamathematics" (New York: van Nostrand, 1952)
 2. Intuitionistic Logic Theorem Provers library [ILTP](http://iltp.de/)
 3. Petri-nets from the [Model Checking Contest](https://pnrepository.lip6.fr/mcc/)
 
-The collections ``ILLTP-\*`` and ``KLE-\*`` are obtained via the Girard translations in [1] and Liang and Miller's 0/1 [2],
-applied to the problems from sources 1 and 2 above. 
+The collections ``ILLTP-\*`` and ``KLE-\*`` are obtained via the Girard translations in [1] (sometimes called call-by-name and call-by-value translations) and Liang and Miller's 0/1 [2], applied to the problems from sources 1 and 2 above. 
 
 The collection  ``KLE-IMP-CONJ`` considers the fragment of intuitionistic logic with implication and conjunction. The above mentioned translations are used as well as the multiplicative 
 translation that substitutes the intuitionistic connectives by their multiplicative linear version (negation is translated as _ -o R, where R is just a particular chosen propositional variable). This translation does not preserve provability and the resulting non-provable sequents are in the directory ``NON-THEOREMS``. The directory ``ALT`` proposes an alternative translation for the non-provable sequent with a small set of bangs and/or additives.
