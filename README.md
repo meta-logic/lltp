@@ -58,4 +58,4 @@ The problems in the directory  ``CLL`` (classical linear logic)
 
 ---
 
-Developed and maintained by [Carlos Olarte](https://sites.google.com/site/carlosolarte/), [Giselle Reis](http://www.gisellereis.com/), [Elaine Pimentel](https://sites.google.com/site/elainepimentel/), [Valeria de Paiva](https://vcvpaiva.github.io/), and [Olivier Laurent](https://perso.ens-lyon.fr/olivier.laurent/). 
+Developed and maintained by [Carlos Olarte](https://sites.google.com/site/carlosolarte/), [Giselle Reis](http://www.gisellereis.com/), [Elaine Pimentel](https://sites.google.com/site/elainepimentel/), [Valeria de Paiva](http://vcvpaiva.github.io/), and [Olivier Laurent](https://perso.ens-lyon.fr/olivier.laurent/). 
